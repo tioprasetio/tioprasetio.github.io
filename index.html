@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio">
+  <title>Portfolio Tio</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3048/3048122.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box" data-aos="fade-right">
+          <img src="./assets/images/about.png" alt="Tio Yudho Prasetio" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Tio Yudho Prasetio"></h1>
+
+          <p class="title"></p>
+        </div>
+
+        <button class="info_more-btn" data-aos="fade-left" data-sidebar-btn>
+          <span>Lihat Kontak</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:tioyudhoprasetio33@gmail.com" class="contact-link">tioyudhoprasetio33@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Lokasi</p>
+
+              <address>Bekasi, Jawabarat, Indonesia.</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://instagram.com/tioprasetio_" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item linkedin">
+            <a href="https://www.linkedin.com/in/tioprasetio/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navb">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Tentang</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Sertifikat</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Kontak</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="tentang">
+
+        <header>
+          <h2 class="h2 article-title">Tentang Saya</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Saya adalah Mahasiswa aktif Universitas Esa Unggul dari Program Studi Teknik Informatika yang
+            memiliki ketertarikan dengan dunia programming dan memiliki pemahaman mengenai HTML, CSS,
+            maupun JavaScript dengan baik serta berdedikasi untuk menjadi Front-End Web Developer.
+          </p>
+        </section>
+
+
+        <!--
+          - softskill
+        -->
+
+        <section class="softskill">
+
+          <h3 class="h3 softskill-title">Apa kelebihan saya?</h3>
+
+          <ul class="softskill-list">
+
+            <li class="softskill-item" data-aos="fade-up">
+
+              <div class="softskill-icon-box">
+                <img src="./assets/images/hacker.png
+                            " alt="design icon" width="40">
+              </div>
+
+              <div class="softskill-content-box">
+                <h4 class="h4 softskill-item-title">Hacker Mentality</h4>
+
+                <p class="softskill-item-text">
+                  Selalu ingin mengulik, antusias, dan semangat belajar mengenai programming
+                  juga tidak mudah menyerah ketika dihadapkan dengan masalah.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="softskill-item" data-aos="fade-up">
+
+              <div class="softskill-icon-box">
+                <img src="./assets/images/thinking.png
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="softskill-content-box">
+                <h4 class="h4 softskill-item-title">Critical Thinking</h4>
+
+                <p class="softskill-item-text">
+                  Mampu berpikir secara jernih dan rasional tentang apa yang harus dilakukan
+                  atau apa yang harus dipercaya.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="softskill-item" data-aos="fade-up">
+
+              <div class="softskill-icon-box">
+                <img src="./assets/images/problem-solving.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="softskill-content-box">
+                <h4 class="h4 softskill-item-title">Problem Solving</h4>
+
+                <p class="softskill-item-text">
+                  Mampu mengidentifikasi dan menemukan solusi yang efektif untuk mengatasi
+                  masalah yang sedang dihadapi baik itu individu maupun team.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="softskill-item" data-aos="fade-up">
+
+              <div class="softskill-icon-box">
+                <img src="./assets/images/doc.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="softskill-content-box">
+                <h4 class="h4 softskill-item-title">Googling & Baca dokumentasi</h4>
+
+                <p class="softskill-item-text">
+                  Kemampuan mencari sesuatu yang ingin dicari dengan google dan memahami
+                  dokumentasi dari sebuah teknologi dengan baik.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <a onclick="downloadMode()" id="downMode" href="./assets/cv/cv_tio.pdf" download="cv_tio" target="_blank">
+            <button id="btnDown" data-aos="fade-up" class="form-btn btn-download" type="submit">
+              <ion-icon id="dwn" name="cloud-download"></ion-icon>
+              <ion-icon id="done" name="checkmark-circle-outline"></ion-icon>
+              <span class="info" id="info">Download CV</span>
+            </button>
+          </a>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="medal-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Pendidikan</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><img src="assets/images/ueu.png" height="22px"
+                  width="22px">&nbsp;&nbsp;Universitas Esa Unggul</h4>
+
+              <span>2022 - Sekarang</span>
+
+              <p class="timeline-text">
+                S1 Teknik Informatika
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><img src="assets/images/tels.png" height="22px"
+                  width="22px">&nbsp;&nbsp;SMK Telekomunikasi Telesandi</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+                Rekayasa Perangkat Lunak, Rata-rata Nilai US 84,38
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Pengalaman</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><img src="assets/images/pptik.png" height="22px"
+                  width="22px">&nbsp;&nbsp;Praktik Kerja Lapangan (PKL)</h4>
+
+              <span>Nov 2020 — Feb 2021</span>
+
+              <p class="timeline-text">
+                Menjalani PKL di Pusat Penelitian Teknologi Informasi & Komunikasi - Institut Teknologi Bandung
+                (PPTIK-ITB)
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Kemampuan</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" height="25px" width="22px">&nbsp;
+                <h5 class="h5">PHP</h5>&nbsp;
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" height="16px" width="16px">&nbsp;
+                <h5 class="h5">JavaScript</h5>&nbsp;
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968389.png" height="16px" width="16px">&nbsp;
+                <h5 class="h5">VB.Net</h5>&nbsp;
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" height="16px" width="16px">&nbsp;
+                <h5 class="h5">c++</h5>&nbsp;
+                <data value="89">89%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 89%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" height="16px" width="16px">&nbsp;
+                <h5 class="h5">Python</h5>&nbsp;
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" height="16px" width="16px">&nbsp;
+                <h5 class="h5">UI Design</h5>&nbsp;
+                <data value="87">87%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 87%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Semua</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Landing Page</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>UI Design</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Pilih Kategori</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Semua</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Landing Page</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>UI Design</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="landing page">
+              <a href="https://tioprasetio.xyz/janjijiwa" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/portfolio/1.png" alt="janjijiwa" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Web Fantasi Janji Jiwa</h3>
+
+                <p class="project-category">Landing Page</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="landing page">
+              <a href="https://tioprasetio.xyz/bekasi" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/portfolio/2.png" alt="bekasi" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Wisata Bekasi</h3>
+
+                <p class="project-category">Landing Page</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <!-- <a href=""> -->
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/portfolio/3.png" alt="aplikasi kasir kantin" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Aplikasi Kasir Kantin Berbasis Desktop</h3>
+
+              <p class="project-category">Applications</p>
+              <!-- </a> -->
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <!-- <a href=""> -->
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/portfolio/4.png" alt="Aplikasi laporan pembayaran SPP" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Aplikasi Laporan Pembayaran SPP Berbasis Web</h3>
+
+              <p class="project-category">Applications</p>
+              <!-- </a> -->
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://tioprasetio.xyz/lovetest">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/portfolio/5.png" alt="Love test" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Aplikasi Test kecocokan pasangan</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ui design">
+              <!-- <a href=""> -->
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/portfolio/6.png" alt="Coffee Ordering Apps" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">UI Design Coffee Ordering Apps</h3>
+
+              <p class="project-category">UI Design</p>
+              <!-- </a> -->
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ui design">
+              <!-- <a href=""> -->
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/portfolio/7.png" alt="Destination Apps" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">UI Design Destination Apps</h3>
+
+              <p class="project-category">UI Design</p>
+              <!-- </a> -->
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="sertifikat">
+
+        <header>
+          <h2 class="h2 article-title">sertifikat</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <!-- ========================== SERTIF PERTAMA ================================ -->
+            <li class="blog-post-item" data-testimonials-item-sertif>
+              <!-- <a href="#"> -->
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/sertifikat/sertif1.jpg" alt="Internet Of Things (IoT)" loading="lazy"
+                  data-testimonials-avatar-sertif>
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Sertifikat</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2021-06-24">24 Juni 2021</time>
+                </div>
+
+                <h3 class="h3 blog-item-title" data-testimonials-title-sertif>Internet Of Things (IoT)</h3>
+
+                <p class="blog-text testimonials-text" data-testimonials-text-sertif>
+                  Sertifikat ini saya dapatkan pada saat menjalani PKL dalam pembuatan
+                  alat Smoke Detector dan Hand Sanitizer Otomatis dengan hasil penilaian
+                  90 di Pusat Penelitian Teknologi Informasi & Komunikasi - Institut Teknologi
+                  Bandung (PPTIK-ITB) yang bekerjasama dengan Laboratorium IoT
+                  Universitas Bandar Lampung dan berlangsung selama 3 Bulan,
+                  yaitu dari bulan
+                  November 2020 hingga Februari 2021.
+                </p>
+
+              </div>
+
+              <!-- </a> -->
+            </li>
+
+            <!-- ========================== SERTIF KEDUA ================================ -->
+            <li class="blog-post-item" data-testimonials-item-sertif-kedua>
+              <!-- <a href="#"> -->
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/sertifikat/sertif3.jpg" alt="SMK Telekomunikasi Telesandi" loading="lazy"
+                  data-testimonials-avatar-sertif-kedua>
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Sertifikat</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-08-15">15 Agustus 2021</time>
+                </div>
+
+                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-kedua>Kompetensi Keahlian</h3>
+
+                <p class="blog-text testimonials-text" data-testimonials-text-sertif-kedua>
+                  Sertifikat ini saya dapatkan pada saat menjalani Ujian Praktek Kompetensi Keahlian
+                  Web Programming di SMK Telekomunikasi Telesandi dengan Skor 90.
+                </p>
+
+              </div>
+
+              <!-- </a> -->
+            </li>
+
+            <!-- ========================== SERTIF KETIGA ================================ -->
+            <li class="blog-post-item" data-testimonials-item-sertif-ketiga>
+              <!-- <a href="#"> -->
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/sertifikat/sertif2.png" alt="JavaScript Intermediate" loading="lazy"
+                  data-testimonials-avatar-sertif-ketiga>
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Sertifikat</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2023-03-31">31 Maret 2023</time>
+                </div>
+
+                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-ketiga>JavaScript Intermediate</h3>
+
+                <p class="blog-text testimonials-text" data-testimonials-text-sertif-ketiga>
+                  Sertifikat ini saya dapatkan pada saat mengikuti Course (kursus) mengenai
+                  bahasa pemrograman JavaScript di SoloLearn.
+                  SoloLearn sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
+                  Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
+                </p>
+
+              </div>
+
+              <!-- </a> -->
+            </li>
+
+            <!-- ========================== SERTIF KEEMPAT ================================ -->
+            <li class="blog-post-item" data-testimonials-item-sertif-keempat>
+              <!-- <a href="#"> -->
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/sertifikat/sertif4.jpg" alt="JavaScript Object & Array" loading="lazy"
+                  data-testimonials-avatar-sertif-keempat>
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Sertifikat</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2023-03-31">31 Maret 2023</time>
+                </div>
+
+                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-keempat>JavaScript Object & Array</h3>
+
+                <p class="blog-text testimonials-text" data-testimonials-text-sertif-keempat>
+                  Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai
+                  bahasa pemrograman JavaScript di MySkill.
+                  MySkill sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
+                  Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
+                </p>
+
+              </div>
+
+              <!-- </a> -->
+            </li>
+
+            <!-- ========================== SERTIF KELIMA ================================ -->
+            <li class="blog-post-item" data-testimonials-item-sertif-kelima>
+              <!-- <a href="#"> -->
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/sertifikat/sertif5.png" alt="JavaScript Object & Array" loading="lazy"
+                  data-testimonials-avatar-sertif-kelima>
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Sertifikat</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2023-05-08">08 Mei 2023</time>
+                </div>
+
+                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-kelima>Coding Festival</h3>
+
+                <p class="blog-text testimonials-text" data-testimonials-text-sertif-kelima>
+                  Sertifikat ini saya dapatkan pada saat mengikuti kegiatan wajib bagi Mahasiswa
+                  Fakultas Ilmu Komputer Universitas Esa Unggul Kampus Bekasi yaitu Coding Festival yang
+                  diselenggarakan oleh Ikatan Mahasiswa Fakultas Ilmu Komputer (IMFASILKOM) dengan
+                  menggunakan bahasa pemrograman C++.
+                </p>
+
+              </div>
+
+              <!-- </a> -->
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--- testimonials modal --->
+
+      <div class="modal-container" data-modal-container-sertif>
+
+        <div class="overlay" data-overlay-sertif></div>
+
+        <section class="testimonials-modal">
+
+          <button class="modal-close-btn" data-modal-close-btn-sertif>
+            <ion-icon name="close-outline" data-modal-close-btn-sertif></ion-icon>
+          </button>
+
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+              <img src="./assets/images/sertifikat/sertif1.jpg" alt="" width="80" data-modal-img-sertif>
+            </figure>
+
+            <img src="./assets/images/icon-quote.svg" alt="quote icon">
+          </div>
+
+          <div class="modal-content">
+
+            <h4 class="h3 modal-title" data-modal-title-sertif>Internet Of Thing (IoT)</h4>
+
+            <time datetime="2021-06-24">24 Juni 2021</time>
+
+            <p data-modal-text-sertif>
+              Sertifikat ini saya dapatkan pada saat menjalani PKL dalam pembuatan alat Smoke Detector dan Hand
+              Sanitizer
+              Otomatis
+              dengan hasil penilaian 90 di Pusat Penelitian Teknologi Informasi & Komunikasi - Institut Teknologi
+              Bandung
+              (PPTIK-ITB)
+              yang bekerjasama dengan Laboratorium IoT Universitas Bandar Lampung dan berlangsung selama 3 Bulan, yaitu
+              dari
+              bulan
+              November 2020 hingga Februari 2021.
+            </p>
+
+          </div>
+
+        </section>
+
+      </div>
+
+      <!--Modal Sertif kedua-->
+      <div class="modal-container" data-modal-container-sertif-kedua>
+
+        <div class="overlay" data-overlay-sertif-kedua></div>
+
+        <section class="testimonials-modal">
+
+          <button class="modal-close-btn" data-modal-close-btn-sertif-kedua>
+            <ion-icon name="close-outline" data-modal-close-btn-sertif-kedua></ion-icon>
+          </button>
+
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+              <img src="./assets/images/sertifikat/sertif3.jpg" alt="" width="80" data-modal-img-sertif-kedua>
+            </figure>
+
+            <img src="./assets/images/icon-quote.svg" alt="quote icon">
+          </div>
+
+          <div class="modal-content">
+
+            <h4 class="h3 modal-title" data-modal-title-sertif-kedua>Kompetensi Keahlian</h4>
+
+            <time datetime="2022-08-15">15 Agustus 2021</time>
+
+            <p data-modal-text-sertif-kedua>
+              Sertifikat ini saya dapatkan pada saat menjalani Ujian Praktek Kompetensi Keahlian
+              Web Programming di SMK Telekomunikasi Telesandi dengan Skor 90.
+            </p>
+
+          </div>
+
+        </section>
+
+      </div>
+
+      <!--Modal Sertif ketiga-->
+      <div class="modal-container" data-modal-container-sertif-ketiga>
+
+        <div class="overlay" data-overlay-sertif-ketiga></div>
+
+        <section class="testimonials-modal">
+
+          <button class="modal-close-btn" data-modal-close-btn-sertif-ketiga>
+            <ion-icon name="close-outline" data-modal-close-btn-sertif-ketiga></ion-icon>
+          </button>
+
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+              <img src="./assets/images/sertifikat/sertif2.png" alt="" width="80" data-modal-img-sertif-ketiga>
+            </figure>
+
+            <img src="./assets/images/icon-quote.svg" alt="quote icon">
+          </div>
+
+          <div class="modal-content">
+
+            <h4 class="h3 modal-title" data-modal-title-sertif-ketiga>JavaScript Intermediate</h4>
+
+            <time datetime="2022-06-16">16 Juni 2022</time>
+
+            <p data-modal-text-sertif-ketiga>
+              Sertifikat ini saya dapatkan pada saat mengikuti Course (kursus) mengenai
+              bahasa pemrograman JavaScript di SoloLearn.
+              SoloLearn sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
+              Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
+            </p>
+
+          </div>
+
+        </section>
+
+      </div>
+
+      <!--Modal Sertif keempat-->
+      <div class="modal-container" data-modal-container-sertif-keempat>
+
+        <div class="overlay" data-overlay-sertif-keempat></div>
+
+        <section class="testimonials-modal">
+
+          <button class="modal-close-btn" data-modal-close-btn-sertif-keempat>
+            <ion-icon name="close-outline" data-modal-close-btn-sertif-keempat></ion-icon>
+          </button>
+
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+              <img src="./assets/images/sertifikat/sertif4.jpg" alt="" width="80" data-modal-img-sertif-keempat>
+            </figure>
+
+            <img src="./assets/images/icon-quote.svg" alt="quote icon">
+          </div>
+
+          <div class="modal-content">
+
+            <h4 class="h3 modal-title" data-modal-title-sertif-keempat>JavaScript Objecct & Array</h4>
+
+            <time datetime="2023-03-31">31 Maret 2023</time>
+
+            <p data-modal-text-sertif-keempat>
+              Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai
+              bahasa pemrograman JavaScript di MySkill.
+              MySkill sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
+              Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
+            </p>
+
+          </div>
+
+        </section>
+
+      </div>
+
+      <!--Modal Sertif kelima-->
+      <div class="modal-container" data-modal-container-sertif-kelima>
+
+        <div class="overlay" data-overlay-sertif-kelima></div>
+
+        <section class="testimonials-modal">
+
+          <button class="modal-close-btn" data-modal-close-btn-sertif-kelima>
+            <ion-icon name="close-outline" data-modal-close-btn-sertif-kelima></ion-icon>
+          </button>
+
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+              <img src="./assets/images/sertifikat/sertif5.png" alt="" width="80" data-modal-img-sertif-kelima>
+            </figure>
+
+            <img src="./assets/images/icon-quote.svg" alt="quote icon">
+          </div>
+
+          <div class="modal-content">
+
+            <h4 class="h3 modal-title" data-modal-title-sertif-kelima>Coding Festival</h4>
+
+            <time datetime="2023-05-08">08 Mei 2023</time>
+
+            <p data-modal-text-sertif-kelima>
+              Sertifikat ini saya dapatkan pada saat mengikuti kegiatan wajib bagi Mahasiswa
+              Fakultas Ilmu Komputer Universitas Esa Unggul Kampus Bekasi yaitu Coding Festival yang
+              diselenggarakan oleh Ikatan Mahasiswa Fakultas Ilmu Komputer (IMFASILKOM) dengan
+              menggunakan bahasa pemrograman C++.
+            </p>
+
+          </div>
+
+        </section>
+
+      </div>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="kontak">
+
+        <header>
+          <h2 class="h2 article-title">Kontak</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4796.593911468063!2d107.03921899239207!3d-6.256892868932151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1662019255993!5m2!1sid!2sid"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Form Kontak</h3>
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terima Kasih!</strong> Pesan anda sudah saya terima.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            </button>
+          </div>
+
+          <form action="#" class="form" name="portfolio-contact-form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="nama" class="form-input" placeholder="Nama" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
+            </div>
+
+            <textarea name="pesan" class="form-input" placeholder="Kirim pesan disini ya..." required
+              data-form-input></textarea>
+
+            <button class="form-btn btn-kirim" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Kirim pesan</span>
+            </button>
+            <button class="form-btn btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Proses...
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- ================== GSAP ================= -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+  <script>
+    gsap.to('.name', { duration: 2, delay: 1.8, text: 'Tio Yudho Prasetio' });
+    gsap.to('.title', { duration: 2, delay: 3, text: 'Junior Front-End Web Developer' });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzepsC16sJqyVEZkvwJNPF_5toJxQw_LnxAsrbTteylnhicwnzW8mm5a3kqCqIu8E0cZQ/exec";
+    const formulir = document.forms["portfolio-contact-form"];
+    const btnKirim = document.querySelector(".btn-kirim");
+    const btnLoading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.my-alert');
+    let nama = document.getElementById("nama");
+
+    formulir.addEventListener("submit", (e) => {
+      e.preventDefault();
+      btnLoading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+      fetch(scriptURL, { method: 'POST', body: new FormData(formulir) })
+
+        .then(response => {
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          myAlert.classList.toggle('d-none');
+          formulir.reset();
+          console.log('Success!', response);
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+
+    //Tombol download CV
+    let info = document.getElementById("info");
+    let downMode = document.getElementById("downMode");
+    let dwn = document.getElementById("dwn");
+    let done = document.getElementById("done");
+    let btnDown = document.getElementById("btnDown");
+
+    done.style.display = "none";
+
+    function downloadMode() {
+      info.textContent = "CV berhasil diunduh";
+      done.style.display = "block";
+      dwn.style.display = "none";
+      btnDown.style.color = "#86ff70";
+    }
+  </script>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
