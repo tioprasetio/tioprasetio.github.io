@@ -1,31 +1,31 @@
 "use strict";
 
 // disable inspect
-// document.addEventListener("contextmenu", function (e) {
-//   e.preventDefault();
-// });
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
 
-// document.onkeydown = function (e) {
-//   if (event.keyCode == 1805) {
-//     return false;
-//   }
+document.onkeydown = function (e) {
+  if (event.keyCode == 1805) {
+    return false;
+  }
 
-//   if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-//     return false;
-//   }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+    return false;
+  }
 
-//   if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-//     return false;
-//   }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+    return false;
+  }
 
-//   if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-//     return false;
-//   }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+    return false;
+  }
 
-//   if (e.ctrlKey && e.shiftKey && e.keyCode == "U".charCodeAt(0)) {
-//     return false;
-//   }
-// }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "U".charCodeAt(0)) {
+    return false;
+  }
+}
 // END
 
 // element toggle function
