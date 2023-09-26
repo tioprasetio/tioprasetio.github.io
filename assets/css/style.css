@@ -122,6 +122,8 @@
 
 a { text-decoration: none; color: var(--white-2); }
 
+a:hover { color: var(--orange-yellow-crayola); }
+
 li { list-style: none; }
 ul { padding-left: 0;}
 
@@ -732,6 +734,25 @@ main {
   opacity: 0.7;
 }
 
+.modal-close-btn2 {
+  position: relative;
+  bottom: 0px;
+  background: var(--onyx);
+  border-radius: 8px;
+  width: auto;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-2);
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.modal-close-btn2 a {
+  display: block;
+}
+
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   opacity: 1;
@@ -770,6 +791,9 @@ main {
   line-height: 1.6;
 }
 
+.modal-content img {
+  margin-top: 10px;
+}
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -952,6 +976,7 @@ main {
 .project-item.active {
   display: block;
   animation: scaleUp 0.25s ease forwards;
+  cursor: pointer;
 }
 
 @keyframes scaleUp {

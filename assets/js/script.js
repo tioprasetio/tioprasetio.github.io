@@ -1,31 +1,31 @@
 "use strict";
 
 // disable inspect
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
-});
+// document.addEventListener("contextmenu", function (e) {
+//   e.preventDefault();
+// });
 
-document.onkeydown = function (e) {
-  if (event.keyCode == 1805) {
-    return false;
-  }
+// document.onkeydown = function (e) {
+//   if (event.keyCode == 1805) {
+//     return false;
+//   }
 
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-    return false;
-  }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+//     return false;
+//   }
 
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-    return false;
-  }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+//     return false;
+//   }
 
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-    return false;
-  }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+//     return false;
+//   }
 
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "U".charCodeAt(0)) {
-    return false;
-  }
-}
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "U".charCodeAt(0)) {
+//     return false;
+//   }
+// }
 // END
 
 // element toggle function
@@ -415,3 +415,291 @@ modalCloseBtnSertifKelima.addEventListener(
   testimonialsModalSertifKelimaFunc
 );
 overlaySertifKelima.addEventListener("click", testimonialsModalSertifKelimaFunc);
+
+//========================== PORTFOLIO PERTAMA ================================
+// testimonials variables
+const testimonialsItemPort = document.querySelectorAll(
+  "[data-testimonials-item-portfolio]"
+);
+const modalContainerPort = document.querySelector(
+  "[data-modal-container-portfolio]"
+);
+const modalCloseBtnPort = document.querySelector(
+  "[data-modal-close-btn-portfolio]"
+);
+const overlayPort = document.querySelector("[data-overlay-portfolio]");
+
+// modal variable
+const modalImgPort = document.querySelector("[data-modal-img-portfolio]");
+const modalTitlePort = document.querySelector("[data-modal-title-portfolio]");
+const modalTextPort = document.querySelector("[data-modal-text-portfolio]");
+
+// modal toggle function
+const testimonialsModalPortFunc = function () {
+  modalContainerPort.classList.toggle("active");
+  overlayPort.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemPort.length; i++) {
+  testimonialsItemPort[i].addEventListener("click", function () {
+    modalImgPort.src = this.querySelector(
+      "[data-testimonials-avatar-portfolio]"
+    ).src;
+    modalImgPort.alt = this.querySelector(
+      "[data-testimonials-avatar-portfolio]"
+    ).alt;
+    modalTitlePort.innerHTML = this.querySelector(
+      "[data-testimonials-title-portfolio]"
+    ).innerHTML;
+    modalTextPort.innerHTML = this.querySelector(
+      "[data-testimonials-text-portfolio]"
+    ).innerHTML;
+
+    testimonialsModalPortFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnPort.addEventListener("click", testimonialsModalPortFunc);
+overlayPort.addEventListener("click", testimonialsModalPortFunc);
+
+//========================== PORTFOLIO KEDUA ================================
+// testimonials variables
+const testimonialsItemPortKedua = document.querySelectorAll(
+  "[data-testimonials-item-portfolio-kedua]"
+);
+const modalContainerPortKedua = document.querySelector(
+  "[data-modal-container-portfolio-kedua]"
+);
+const modalCloseBtnPortKedua = document.querySelector(
+  "[data-modal-close-btn-portfolio-kedua]"
+);
+const overlayPortKedua = document.querySelector("[data-overlay-portfolio-kedua]");
+
+// modal variable
+const modalImgPortKedua = document.querySelector("[data-modal-img-portfolio-kedua]");
+const modalTitlePortKedua = document.querySelector("[data-modal-title-portfolio-kedua]");
+const modalTextPortKedua = document.querySelector("[data-modal-text-portfolio-kedua]");
+
+// modal toggle function
+const testimonialsModalPortKeduaFunc = function () {
+  modalContainerPortKedua.classList.toggle("active");
+  overlayPortKedua.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemPortKedua.length; i++) {
+  testimonialsItemPortKedua[i].addEventListener("click", function () {
+    modalImgPortKedua.src = this.querySelector(
+      "[data-testimonials-avatar-portfolio-kedua]"
+    ).src;
+    modalImgPortKedua.alt = this.querySelector(
+      "[data-testimonials-avatar-portfolio-kedua]"
+    ).alt;
+    modalTitlePortKedua.innerHTML = this.querySelector(
+      "[data-testimonials-title-portfolio-kedua]"
+    ).innerHTML;
+    modalTextPortKedua.innerHTML = this.querySelector(
+      "[data-testimonials-text-portfolio-kedua]"
+    ).innerHTML;
+
+    testimonialsModalPortKeduaFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnPortKedua.addEventListener("click", testimonialsModalPortKeduaFunc);
+overlayPortKedua.addEventListener("click", testimonialsModalPortKeduaFunc);
+
+//========================== PORTFOLIO KETIGA ================================
+// testimonials variables
+const testimonialsItemPortKetiga = document.querySelectorAll(
+  "[data-testimonials-item-portfolio-ketiga]"
+);
+const modalContainerPortKetiga = document.querySelector(
+  "[data-modal-container-portfolio-ketiga]"
+);
+const modalCloseBtnPortKetiga = document.querySelector(
+  "[data-modal-close-btn-portfolio-ketiga]"
+);
+const overlayPortKetiga = document.querySelector("[data-overlay-portfolio-ketiga]");
+
+// modal variable
+const modalImgPortKetiga = document.querySelector("[data-modal-img-portfolio-ketiga]");
+const modalTitlePortKetiga = document.querySelector("[data-modal-title-portfolio-ketiga]");
+const modalTextPortKetiga = document.querySelector("[data-modal-text-portfolio-ketiga]");
+
+// modal toggle function
+const testimonialsModalPortKetigaFunc = function () {
+  modalContainerPortKetiga.classList.toggle("active");
+  overlayPortKetiga.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemPortKetiga.length; i++) {
+  testimonialsItemPortKetiga[i].addEventListener("click", function () {
+    modalImgPortKetiga.src = this.querySelector(
+      "[data-testimonials-avatar-portfolio-ketiga]"
+    ).src;
+    modalImgPortKetiga.alt = this.querySelector(
+      "[data-testimonials-avatar-portfolio-ketiga]"
+    ).alt;
+    modalTitlePortKetiga.innerHTML = this.querySelector(
+      "[data-testimonials-title-portfolio-ketiga]"
+    ).innerHTML;
+    modalTextPortKetiga.innerHTML = this.querySelector(
+      "[data-testimonials-text-portfolio-ketiga]"
+    ).innerHTML;
+
+    testimonialsModalPortKetigaFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnPortKetiga.addEventListener("click", testimonialsModalPortKetigaFunc);
+overlayPortKetiga.addEventListener("click", testimonialsModalPortKetigaFunc);
+
+//========================== PORTFOLIO KEEMPAT ================================
+// testimonials variables
+const testimonialsItemPortKeempat = document.querySelectorAll(
+  "[data-testimonials-item-portfolio-keempat]"
+);
+const modalContainerPortKeempat = document.querySelector(
+  "[data-modal-container-portfolio-keempat]"
+);
+const modalCloseBtnPortKeempat = document.querySelector(
+  "[data-modal-close-btn-portfolio-keempat]"
+);
+const overlayPortKeempat = document.querySelector("[data-overlay-portfolio-keempat]");
+
+// modal variable
+const modalImgPortKeempat = document.querySelector("[data-modal-img-portfolio-keempat]");
+const modalTitlePortKeempat = document.querySelector("[data-modal-title-portfolio-keempat]");
+const modalTextPortKeempat = document.querySelector("[data-modal-text-portfolio-keempat]");
+
+// modal toggle function
+const testimonialsModalPortKeempatFunc = function () {
+  modalContainerPortKeempat.classList.toggle("active");
+  overlayPortKeempat.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemPortKeempat.length; i++) {
+  testimonialsItemPortKeempat[i].addEventListener("click", function () {
+    modalImgPortKeempat.src = this.querySelector(
+      "[data-testimonials-avatar-portfolio-keempat]"
+    ).src;
+    modalImgPortKeempat.alt = this.querySelector(
+      "[data-testimonials-avatar-portfolio-keempat]"
+    ).alt;
+    modalTitlePortKeempat.innerHTML = this.querySelector(
+      "[data-testimonials-title-portfolio-keempat]"
+    ).innerHTML;
+    modalTextPortKeempat.innerHTML = this.querySelector(
+      "[data-testimonials-text-portfolio-keempat]"
+    ).innerHTML;
+
+    testimonialsModalPortKeempatFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnPortKeempat.addEventListener("click", testimonialsModalPortKeempatFunc);
+overlayPortKeempat.addEventListener("click", testimonialsModalPortKeempatFunc);
+
+//========================== PORTFOLIO KELIMA ================================
+// testimonials variables
+const testimonialsItemPortKelima = document.querySelectorAll(
+  "[data-testimonials-item-portfolio-kelima]"
+);
+const modalContainerPortKelima = document.querySelector(
+  "[data-modal-container-portfolio-kelima]"
+);
+const modalCloseBtnPortKelima = document.querySelector(
+  "[data-modal-close-btn-portfolio-kelima]"
+);
+const overlayPortKelima = document.querySelector("[data-overlay-portfolio-kelima]");
+
+// modal variable
+const modalImgPortKelima = document.querySelector("[data-modal-img-portfolio-kelima]");
+const modalTitlePortKelima = document.querySelector("[data-modal-title-portfolio-kelima]");
+const modalTextPortKelima = document.querySelector("[data-modal-text-portfolio-kelima]");
+
+// modal toggle function
+const testimonialsModalPortKelimaFunc = function () {
+  modalContainerPortKelima.classList.toggle("active");
+  overlayPortKelima.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemPortKelima.length; i++) {
+  testimonialsItemPortKelima[i].addEventListener("click", function () {
+    modalImgPortKelima.src = this.querySelector(
+      "[data-testimonials-avatar-portfolio-kelima]"
+    ).src;
+    modalImgPortKelima.alt = this.querySelector(
+      "[data-testimonials-avatar-portfolio-kelima]"
+    ).alt;
+    modalTitlePortKelima.innerHTML = this.querySelector(
+      "[data-testimonials-title-portfolio-kelima]"
+    ).innerHTML;
+    modalTextPortKelima.innerHTML = this.querySelector(
+      "[data-testimonials-text-portfolio-kelima]"
+    ).innerHTML;
+
+    testimonialsModalPortKelimaFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnPortKelima.addEventListener("click", testimonialsModalPortKelimaFunc);
+overlayPortKelima.addEventListener("click", testimonialsModalPortKelimaFunc);
+
+//========================== PORTFOLIO KEENAM ================================
+// testimonials variables
+const testimonialsItemPortKeenam = document.querySelectorAll(
+  "[data-testimonials-item-portfolio-keenam]"
+);
+const modalContainerPortKeenam = document.querySelector(
+  "[data-modal-container-portfolio-keenam]"
+);
+const modalCloseBtnPortKeenam = document.querySelector(
+  "[data-modal-close-btn-portfolio-keenam]"
+);
+const overlayPortKeenam = document.querySelector("[data-overlay-portfolio-keenam]");
+
+// modal variable
+const modalImgPortKeenam = document.querySelector("[data-modal-img-portfolio-keenam]");
+const modalTitlePortKeenam = document.querySelector("[data-modal-title-portfolio-keenam]");
+const modalTextPortKeenam = document.querySelector("[data-modal-text-portfolio-keenam]");
+
+// modal toggle function
+const testimonialsModalPortKeenamFunc = function () {
+  modalContainerPortKeenam.classList.toggle("active");
+  overlayPortKeenam.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemPortKeenam.length; i++) {
+  testimonialsItemPortKeenam[i].addEventListener("click", function () {
+    modalImgPortKeenam.src = this.querySelector(
+      "[data-testimonials-avatar-portfolio-keenam]"
+    ).src;
+    modalImgPortKeenam.alt = this.querySelector(
+      "[data-testimonials-avatar-portfolio-keenam]"
+    ).alt;
+    modalTitlePortKeenam.innerHTML = this.querySelector(
+      "[data-testimonials-title-portfolio-keenam]"
+    ).innerHTML;
+    modalTextPortKeenam.innerHTML = this.querySelector(
+      "[data-testimonials-text-portfolio-keenam]"
+    ).innerHTML;
+
+    testimonialsModalPortKeenamFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnPortKeenam.addEventListener("click", testimonialsModalPortKeenamFunc);
+overlayPortKeenam.addEventListener("click", testimonialsModalPortKeenamFunc);
