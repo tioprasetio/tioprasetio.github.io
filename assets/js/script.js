@@ -416,6 +416,65 @@ modalCloseBtnSertifKelima.addEventListener(
 );
 overlaySertifKelima.addEventListener("click", testimonialsModalSertifKelimaFunc);
 
+//========================== TESTI KEENAM ================================
+// testimonials variables 2
+const testimonialsItemSertifKeenam = document.querySelectorAll(
+  "[data-testimonials-item-sertif-keenam]"
+);
+const modalContainerSertifKeenam = document.querySelector(
+  "[data-modal-container-sertif-keenam]"
+);
+const modalCloseBtnSertifKeenam = document.querySelector(
+  "[data-modal-close-btn-sertif-keenam]"
+);
+const overlaySertifKeenam = document.querySelector(
+  "[data-overlay-sertif-keenam]"
+);
+
+// modal variable
+const modalImgSertifKeenam = document.querySelector(
+  "[data-modal-img-sertif-keenam]"
+);
+const modalTitleSertifKeenam = document.querySelector(
+  "[data-modal-title-sertif-keenam]"
+);
+const modalTextSertifKeenam = document.querySelector(
+  "[data-modal-text-sertif-keenam]"
+);
+
+// modal toggle function
+const testimonialsModalSertifKeenamFunc = function () {
+  modalContainerSertifKeenam.classList.toggle("active");
+  overlaySertifKeenam.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemSertifKeenam.length; i++) {
+  testimonialsItemSertifKeenam[i].addEventListener("click", function () {
+    modalImgSertifKeenam.src = this.querySelector(
+      "[data-testimonials-avatar-sertif-keenam]"
+    ).src;
+    modalImgSertifKeenam.alt = this.querySelector(
+      "[data-testimonials-avatar-sertif-keenam]"
+    ).alt;
+    modalTitleSertifKeenam.innerHTML = this.querySelector(
+      "[data-testimonials-title-sertif-keenam]"
+    ).innerHTML;
+    modalTextSertifKeenam.innerHTML = this.querySelector(
+      "[data-testimonials-text-sertif-keenam]"
+    ).innerHTML;
+
+    testimonialsModalSertifKeenamFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnSertifKeenam.addEventListener(
+  "click",
+  testimonialsModalSertifKeenamFunc
+);
+overlaySertifKeenam.addEventListener("click", testimonialsModalSertifKeenamFunc);
+
 //========================== PORTFOLIO PERTAMA ================================
 // testimonials variables
 const testimonialsItemPort = document.querySelectorAll(
@@ -703,3 +762,51 @@ for (let i = 0; i < testimonialsItemPortKeenam.length; i++) {
 // add click event to modal close button
 modalCloseBtnPortKeenam.addEventListener("click", testimonialsModalPortKeenamFunc);
 overlayPortKeenam.addEventListener("click", testimonialsModalPortKeenamFunc);
+
+//========================== PORTFOLIO KETUJUH ================================
+// testimonials variables
+const testimonialsItemPortKetujuh = document.querySelectorAll(
+  "[data-testimonials-item-portfolio-ketujuh]"
+);
+const modalContainerPortKetujuh = document.querySelector(
+  "[data-modal-container-portfolio-ketujuh]"
+);
+const modalCloseBtnPortKetujuh = document.querySelector(
+  "[data-modal-close-btn-portfolio-ketujuh]"
+);
+const overlayPortKetujuh = document.querySelector("[data-overlay-portfolio-ketujuh]");
+
+// modal variable
+const modalImgPortKetujuh = document.querySelector("[data-modal-img-portfolio-ketujuh]");
+const modalTitlePortKetujuh = document.querySelector("[data-modal-title-portfolio-ketujuh]");
+const modalTextPortKetujuh = document.querySelector("[data-modal-text-portfolio-ketujuh]");
+
+// modal toggle function
+const testimonialsModalPortKetujuhFunc = function () {
+  modalContainerPortKetujuh.classList.toggle("active");
+  overlayPortKetujuh.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemPortKetujuh.length; i++) {
+  testimonialsItemPortKetujuh[i].addEventListener("click", function () {
+    modalImgPortKetujuh.src = this.querySelector(
+      "[data-testimonials-avatar-portfolio-ketujuh]"
+    ).src;
+    modalImgPortKetujuh.alt = this.querySelector(
+      "[data-testimonials-avatar-portfolio-ketujuh]"
+    ).alt;
+    modalTitlePortKetujuh.innerHTML = this.querySelector(
+      "[data-testimonials-title-portfolio-ketujuh]"
+    ).innerHTML;
+    modalTextPortKetujuh.innerHTML = this.querySelector(
+      "[data-testimonials-text-portfolio-ketujuh]"
+    ).innerHTML;
+
+    testimonialsModalPortKetujuhFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnPortKetujuh.addEventListener("click", testimonialsModalPortKetujuhFunc);
+overlayPortKetujuh.addEventListener("click", testimonialsModalPortKetujuhFunc);
