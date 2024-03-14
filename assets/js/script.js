@@ -810,3 +810,53 @@ for (let i = 0; i < testimonialsItemPortKetujuh.length; i++) {
 // add click event to modal close button
 modalCloseBtnPortKetujuh.addEventListener("click", testimonialsModalPortKetujuhFunc);
 overlayPortKetujuh.addEventListener("click", testimonialsModalPortKetujuhFunc);
+
+// =================== MENYUSUN SERTIF DARI YANG TERBARU ====================
+
+// Mendapatkan daftar elemen sertifikat
+const sertifikatItems = document.querySelectorAll('.blog-post-item');
+
+// Mengubah daftar elemen menjadi array untuk mempermudah pengurutan
+const sertifikatArray = Array.from(sertifikatItems);
+
+// Fungsi untuk membandingkan tanggal dari dua elemen sertifikat
+function compareDates(a, b) {
+  const dateA = new Date(a.querySelector('time').getAttribute('datetime'));
+  const dateB = new Date(b.querySelector('time').getAttribute('datetime'));
+  return dateB - dateA; // Mengurutkan dari yang terbaru ke yang terlama
+}
+
+// Mengurutkan array sertifikat berdasarkan tanggal
+sertifikatArray.sort(compareDates);
+
+// Menghapus semua elemen sertifikat dari daftar
+const blogPostsList = document.querySelector('.blog-posts-list');
+blogPostsList.innerHTML = '';
+
+// Menambahkan kembali elemen sertifikat ke daftar dalam urutan yang baru (terbaru di bagian atas)
+sertifikatArray.forEach(sertifikat => blogPostsList.appendChild(sertifikat));
+
+// =================== MENYUSUN PORTFOLIO DARI YANG TERBARU ====================
+
+// Mendapatkan daftar elemen proyek
+const projectItems = document.querySelectorAll('.project-item');
+
+// Mengubah daftar elemen menjadi array untuk mempermudah pengurutan
+const projectArray = Array.from(projectItems);
+
+// Fungsi untuk membandingkan tanggal dari dua elemen proyek
+function compareProjectDates(a, b) {
+  const dateA = new Date(a.getAttribute('data-project-date'));
+  const dateB = new Date(b.getAttribute('data-project-date'));
+  return dateB - dateA; // Mengurutkan dari yang terbaru ke yang terlama
+}
+
+// Mengurutkan array proyek berdasarkan tanggal
+projectArray.sort(compareProjectDates);
+
+// Menghapus semua elemen proyek dari daftar
+const projectList = document.querySelector('.project-list');
+projectList.innerHTML = '';
+
+// Menambahkan kembali elemen proyek ke daftar dalam urutan yang baru (terbaru di bagian atas)
+projectArray.forEach(project => projectList.prepend(project));
