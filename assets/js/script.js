@@ -25,7 +25,7 @@ document.onkeydown = function (e) {
   if (e.ctrlKey && e.shiftKey && e.keyCode == "U".charCodeAt(0)) {
     return false;
   }
-}
+};
 // END
 
 // element toggle function
@@ -355,7 +355,10 @@ modalCloseBtnSertifKeempat.addEventListener(
   "click",
   testimonialsModalSertifKeempatFunc
 );
-overlaySertifKeempat.addEventListener("click", testimonialsModalSertifKeempatFunc);
+overlaySertifKeempat.addEventListener(
+  "click",
+  testimonialsModalSertifKeempatFunc
+);
 
 //========================== TESTI KELIMA ================================
 // testimonials variables 2
@@ -414,7 +417,10 @@ modalCloseBtnSertifKelima.addEventListener(
   "click",
   testimonialsModalSertifKelimaFunc
 );
-overlaySertifKelima.addEventListener("click", testimonialsModalSertifKelimaFunc);
+overlaySertifKelima.addEventListener(
+  "click",
+  testimonialsModalSertifKelimaFunc
+);
 
 //========================== TESTI KEENAM ================================
 // testimonials variables 2
@@ -473,7 +479,10 @@ modalCloseBtnSertifKeenam.addEventListener(
   "click",
   testimonialsModalSertifKeenamFunc
 );
-overlaySertifKeenam.addEventListener("click", testimonialsModalSertifKeenamFunc);
+overlaySertifKeenam.addEventListener(
+  "click",
+  testimonialsModalSertifKeenamFunc
+);
 
 //========================== PORTFOLIO PERTAMA ================================
 // testimonials variables
@@ -534,12 +543,20 @@ const modalContainerPortKedua = document.querySelector(
 const modalCloseBtnPortKedua = document.querySelector(
   "[data-modal-close-btn-portfolio-kedua]"
 );
-const overlayPortKedua = document.querySelector("[data-overlay-portfolio-kedua]");
+const overlayPortKedua = document.querySelector(
+  "[data-overlay-portfolio-kedua]"
+);
 
 // modal variable
-const modalImgPortKedua = document.querySelector("[data-modal-img-portfolio-kedua]");
-const modalTitlePortKedua = document.querySelector("[data-modal-title-portfolio-kedua]");
-const modalTextPortKedua = document.querySelector("[data-modal-text-portfolio-kedua]");
+const modalImgPortKedua = document.querySelector(
+  "[data-modal-img-portfolio-kedua]"
+);
+const modalTitlePortKedua = document.querySelector(
+  "[data-modal-title-portfolio-kedua]"
+);
+const modalTextPortKedua = document.querySelector(
+  "[data-modal-text-portfolio-kedua]"
+);
 
 // modal toggle function
 const testimonialsModalPortKeduaFunc = function () {
@@ -568,7 +585,10 @@ for (let i = 0; i < testimonialsItemPortKedua.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtnPortKedua.addEventListener("click", testimonialsModalPortKeduaFunc);
+modalCloseBtnPortKedua.addEventListener(
+  "click",
+  testimonialsModalPortKeduaFunc
+);
 overlayPortKedua.addEventListener("click", testimonialsModalPortKeduaFunc);
 
 //========================== PORTFOLIO KETIGA ================================
@@ -582,12 +602,20 @@ const modalContainerPortKetiga = document.querySelector(
 const modalCloseBtnPortKetiga = document.querySelector(
   "[data-modal-close-btn-portfolio-ketiga]"
 );
-const overlayPortKetiga = document.querySelector("[data-overlay-portfolio-ketiga]");
+const overlayPortKetiga = document.querySelector(
+  "[data-overlay-portfolio-ketiga]"
+);
 
 // modal variable
-const modalImgPortKetiga = document.querySelector("[data-modal-img-portfolio-ketiga]");
-const modalTitlePortKetiga = document.querySelector("[data-modal-title-portfolio-ketiga]");
-const modalTextPortKetiga = document.querySelector("[data-modal-text-portfolio-ketiga]");
+const modalImgPortKetiga = document.querySelector(
+  "[data-modal-img-portfolio-ketiga]"
+);
+const modalTitlePortKetiga = document.querySelector(
+  "[data-modal-title-portfolio-ketiga]"
+);
+const modalTextPortKetiga = document.querySelector(
+  "[data-modal-text-portfolio-ketiga]"
+);
 
 // modal toggle function
 const testimonialsModalPortKetigaFunc = function () {
@@ -616,7 +644,10 @@ for (let i = 0; i < testimonialsItemPortKetiga.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtnPortKetiga.addEventListener("click", testimonialsModalPortKetigaFunc);
+modalCloseBtnPortKetiga.addEventListener(
+  "click",
+  testimonialsModalPortKetigaFunc
+);
 overlayPortKetiga.addEventListener("click", testimonialsModalPortKetigaFunc);
 
 //========================== PORTFOLIO KEEMPAT ================================
@@ -630,12 +661,20 @@ const modalContainerPortKeempat = document.querySelector(
 const modalCloseBtnPortKeempat = document.querySelector(
   "[data-modal-close-btn-portfolio-keempat]"
 );
-const overlayPortKeempat = document.querySelector("[data-overlay-portfolio-keempat]");
+const overlayPortKeempat = document.querySelector(
+  "[data-overlay-portfolio-keempat]"
+);
 
 // modal variable
-const modalImgPortKeempat = document.querySelector("[data-modal-img-portfolio-keempat]");
-const modalTitlePortKeempat = document.querySelector("[data-modal-title-portfolio-keempat]");
-const modalTextPortKeempat = document.querySelector("[data-modal-text-portfolio-keempat]");
+const modalImgPortKeempat = document.querySelector(
+  "[data-modal-img-portfolio-keempat]"
+);
+const modalTitlePortKeempat = document.querySelector(
+  "[data-modal-title-portfolio-keempat]"
+);
+const modalTextPortKeempat = document.querySelector(
+  "[data-modal-text-portfolio-keempat]"
+);
 
 // modal toggle function
 const testimonialsModalPortKeempatFunc = function () {
@@ -664,7 +703,10 @@ for (let i = 0; i < testimonialsItemPortKeempat.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtnPortKeempat.addEventListener("click", testimonialsModalPortKeempatFunc);
+modalCloseBtnPortKeempat.addEventListener(
+  "click",
+  testimonialsModalPortKeempatFunc
+);
 overlayPortKeempat.addEventListener("click", testimonialsModalPortKeempatFunc);
 
 //========================== PORTFOLIO KELIMA ================================
@@ -678,12 +720,20 @@ const modalContainerPortKelima = document.querySelector(
 const modalCloseBtnPortKelima = document.querySelector(
   "[data-modal-close-btn-portfolio-kelima]"
 );
-const overlayPortKelima = document.querySelector("[data-overlay-portfolio-kelima]");
+const overlayPortKelima = document.querySelector(
+  "[data-overlay-portfolio-kelima]"
+);
 
 // modal variable
-const modalImgPortKelima = document.querySelector("[data-modal-img-portfolio-kelima]");
-const modalTitlePortKelima = document.querySelector("[data-modal-title-portfolio-kelima]");
-const modalTextPortKelima = document.querySelector("[data-modal-text-portfolio-kelima]");
+const modalImgPortKelima = document.querySelector(
+  "[data-modal-img-portfolio-kelima]"
+);
+const modalTitlePortKelima = document.querySelector(
+  "[data-modal-title-portfolio-kelima]"
+);
+const modalTextPortKelima = document.querySelector(
+  "[data-modal-text-portfolio-kelima]"
+);
 
 // modal toggle function
 const testimonialsModalPortKelimaFunc = function () {
@@ -712,7 +762,10 @@ for (let i = 0; i < testimonialsItemPortKelima.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtnPortKelima.addEventListener("click", testimonialsModalPortKelimaFunc);
+modalCloseBtnPortKelima.addEventListener(
+  "click",
+  testimonialsModalPortKelimaFunc
+);
 overlayPortKelima.addEventListener("click", testimonialsModalPortKelimaFunc);
 
 //========================== PORTFOLIO KEENAM ================================
@@ -726,12 +779,20 @@ const modalContainerPortKeenam = document.querySelector(
 const modalCloseBtnPortKeenam = document.querySelector(
   "[data-modal-close-btn-portfolio-keenam]"
 );
-const overlayPortKeenam = document.querySelector("[data-overlay-portfolio-keenam]");
+const overlayPortKeenam = document.querySelector(
+  "[data-overlay-portfolio-keenam]"
+);
 
 // modal variable
-const modalImgPortKeenam = document.querySelector("[data-modal-img-portfolio-keenam]");
-const modalTitlePortKeenam = document.querySelector("[data-modal-title-portfolio-keenam]");
-const modalTextPortKeenam = document.querySelector("[data-modal-text-portfolio-keenam]");
+const modalImgPortKeenam = document.querySelector(
+  "[data-modal-img-portfolio-keenam]"
+);
+const modalTitlePortKeenam = document.querySelector(
+  "[data-modal-title-portfolio-keenam]"
+);
+const modalTextPortKeenam = document.querySelector(
+  "[data-modal-text-portfolio-keenam]"
+);
 
 // modal toggle function
 const testimonialsModalPortKeenamFunc = function () {
@@ -760,7 +821,10 @@ for (let i = 0; i < testimonialsItemPortKeenam.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtnPortKeenam.addEventListener("click", testimonialsModalPortKeenamFunc);
+modalCloseBtnPortKeenam.addEventListener(
+  "click",
+  testimonialsModalPortKeenamFunc
+);
 overlayPortKeenam.addEventListener("click", testimonialsModalPortKeenamFunc);
 
 //========================== PORTFOLIO KETUJUH ================================
@@ -774,12 +838,20 @@ const modalContainerPortKetujuh = document.querySelector(
 const modalCloseBtnPortKetujuh = document.querySelector(
   "[data-modal-close-btn-portfolio-ketujuh]"
 );
-const overlayPortKetujuh = document.querySelector("[data-overlay-portfolio-ketujuh]");
+const overlayPortKetujuh = document.querySelector(
+  "[data-overlay-portfolio-ketujuh]"
+);
 
 // modal variable
-const modalImgPortKetujuh = document.querySelector("[data-modal-img-portfolio-ketujuh]");
-const modalTitlePortKetujuh = document.querySelector("[data-modal-title-portfolio-ketujuh]");
-const modalTextPortKetujuh = document.querySelector("[data-modal-text-portfolio-ketujuh]");
+const modalImgPortKetujuh = document.querySelector(
+  "[data-modal-img-portfolio-ketujuh]"
+);
+const modalTitlePortKetujuh = document.querySelector(
+  "[data-modal-title-portfolio-ketujuh]"
+);
+const modalTextPortKetujuh = document.querySelector(
+  "[data-modal-text-portfolio-ketujuh]"
+);
 
 // modal toggle function
 const testimonialsModalPortKetujuhFunc = function () {
@@ -808,21 +880,24 @@ for (let i = 0; i < testimonialsItemPortKetujuh.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtnPortKetujuh.addEventListener("click", testimonialsModalPortKetujuhFunc);
+modalCloseBtnPortKetujuh.addEventListener(
+  "click",
+  testimonialsModalPortKetujuhFunc
+);
 overlayPortKetujuh.addEventListener("click", testimonialsModalPortKetujuhFunc);
 
 // =================== MENYUSUN SERTIF DARI YANG TERBARU ====================
 
 // Mendapatkan daftar elemen sertifikat
-const sertifikatItems = document.querySelectorAll('.blog-post-item');
+const sertifikatItems = document.querySelectorAll(".blog-post-item");
 
 // Mengubah daftar elemen menjadi array untuk mempermudah pengurutan
 const sertifikatArray = Array.from(sertifikatItems);
 
 // Fungsi untuk membandingkan tanggal dari dua elemen sertifikat
 function compareDates(a, b) {
-  const dateA = new Date(a.querySelector('time').getAttribute('datetime'));
-  const dateB = new Date(b.querySelector('time').getAttribute('datetime'));
+  const dateA = new Date(a.querySelector("time").getAttribute("datetime"));
+  const dateB = new Date(b.querySelector("time").getAttribute("datetime"));
   return dateB - dateA; // Mengurutkan dari yang terbaru ke yang terlama
 }
 
@@ -830,24 +905,24 @@ function compareDates(a, b) {
 sertifikatArray.sort(compareDates);
 
 // Menghapus semua elemen sertifikat dari daftar
-const blogPostsList = document.querySelector('.blog-posts-list');
-blogPostsList.innerHTML = '';
+const blogPostsList = document.querySelector(".blog-posts-list");
+blogPostsList.innerHTML = "";
 
 // Menambahkan kembali elemen sertifikat ke daftar dalam urutan yang baru (terbaru di bagian atas)
-sertifikatArray.forEach(sertifikat => blogPostsList.appendChild(sertifikat));
+sertifikatArray.forEach((sertifikat) => blogPostsList.appendChild(sertifikat));
 
 // =================== MENYUSUN PORTFOLIO DARI YANG TERBARU ====================
 
 // Mendapatkan daftar elemen proyek
-const projectItems = document.querySelectorAll('.project-item');
+const projectItems = document.querySelectorAll(".project-item");
 
 // Mengubah daftar elemen menjadi array untuk mempermudah pengurutan
 const projectArray = Array.from(projectItems);
 
 // Fungsi untuk membandingkan tanggal dari dua elemen proyek
 function compareProjectDates(a, b) {
-  const dateA = new Date(a.getAttribute('data-project-date'));
-  const dateB = new Date(b.getAttribute('data-project-date'));
+  const dateA = new Date(a.getAttribute("data-project-date"));
+  const dateB = new Date(b.getAttribute("data-project-date"));
   return dateB - dateA; // Mengurutkan dari yang terbaru ke yang terlama
 }
 
@@ -855,8 +930,8 @@ function compareProjectDates(a, b) {
 projectArray.sort(compareProjectDates);
 
 // Menghapus semua elemen proyek dari daftar
-const projectList = document.querySelector('.project-list');
-projectList.innerHTML = '';
+const projectList = document.querySelector(".project-list");
+projectList.innerHTML = "";
 
 // Menambahkan kembali elemen proyek ke daftar dalam urutan yang baru (terbaru di bagian atas)
-projectArray.forEach(project => projectList.prepend(project));
+projectArray.forEach((project) => projectList.prepend(project));

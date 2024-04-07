@@ -904,7 +904,7 @@ main {
 
 
 .skills-item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   margin-right: 20px;
 }
 
@@ -1403,7 +1403,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: max-content; }
 
   .sidebar-info { gap: 25px; }
 
@@ -1564,8 +1564,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     left: -43px;
   }
 
-  .skills-item:not(:last-child) { margin-bottom: 25px; }
-
 
 
   /**
@@ -1607,8 +1605,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-
-
+@media (max-width: 767px) {
+  .skills-item:not(:last-child) { margin-bottom: 25px; }
+}
 
 
 /**
@@ -1687,6 +1686,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
 
+  /* skill */
+
+  .skills-list{
+    justify-content: space-around;
+  }
+
 
   /**
    * CONTACT
@@ -1763,6 +1768,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     bottom: auto;
     top: 0;
     left: auto;
+    margin: 0;
     right: 0;
     width: max-content;
     border-radius: 0 20px;
