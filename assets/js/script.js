@@ -484,6 +484,253 @@ overlaySertifKeenam.addEventListener(
   testimonialsModalSertifKeenamFunc
 );
 
+//========================== TESTI KETUJUH ================================
+// testimonials variables 2
+const testimonialsItemSertifKetujuh = document.querySelectorAll(
+  "[data-testimonials-item-sertif-ketujuh]"
+);
+const modalContainerSertifKetujuh = document.querySelector(
+  "[data-modal-container-sertif-ketujuh]"
+);
+const modalCloseBtnSertifKetujuh = document.querySelector(
+  "[data-modal-close-btn-sertif-ketujuh]"
+);
+const overlaySertifKetujuh = document.querySelector(
+  "[data-overlay-sertif-ketujuh]"
+);
+
+// modal variable
+const modalImgSertifKetujuh = document.querySelector(
+  "[data-modal-img-sertif-ketujuh]"
+);
+const modalTitleSertifKetujuh = document.querySelector(
+  "[data-modal-title-sertif-ketujuh]"
+);
+const modalTextSertifKetujuh = document.querySelector(
+  "[data-modal-text-sertif-ketujuh]"
+);
+
+// modal toggle function
+const testimonialsModalSertifKetujuhFunc = function () {
+  modalContainerSertifKetujuh.classList.toggle("active");
+  overlaySertifKetujuh.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemSertifKetujuh.length; i++) {
+  testimonialsItemSertifKetujuh[i].addEventListener("click", function () {
+    modalImgSertifKetujuh.src = this.querySelector(
+      "[data-testimonials-avatar-sertif-ketujuh]"
+    ).src;
+    modalImgSertifKetujuh.alt = this.querySelector(
+      "[data-testimonials-avatar-sertif-ketujuh]"
+    ).alt;
+    modalTitleSertifKetujuh.innerHTML = this.querySelector(
+      "[data-testimonials-title-sertif-ketujuh]"
+    ).innerHTML;
+    modalTextSertifKetujuh.innerHTML = this.querySelector(
+      "[data-testimonials-text-sertif-ketujuh]"
+    ).innerHTML;
+
+    testimonialsModalSertifKetujuhFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnSertifKetujuh.addEventListener(
+  "click",
+  testimonialsModalSertifKetujuhFunc
+);
+overlaySertifKetujuh.addEventListener(
+  "click",
+  testimonialsModalSertifKetujuhFunc
+);
+
+//========================== TESTI KEDELAPAN ================================
+// testimonials variables 2
+const testimonialsItemSertifKedelapan = document.querySelectorAll(
+  "[data-testimonials-item-sertif-kedelapan]"
+);
+const modalContainerSertifKedelapan = document.querySelector(
+  "[data-modal-container-sertif-kedelapan]"
+);
+const modalCloseBtnSertifKedelapan = document.querySelector(
+  "[data-modal-close-btn-sertif-kedelapan]"
+);
+const overlaySertifKedelapan = document.querySelector(
+  "[data-overlay-sertif-kedelapan]"
+);
+
+// modal variable
+const modalImgSertifKedelapan = document.querySelector(
+  "[data-modal-img-sertif-kedelapan]"
+);
+const modalTitleSertifKedelapan = document.querySelector(
+  "[data-modal-title-sertif-kedelapan]"
+);
+const modalTextSertifKedelapan = document.querySelector(
+  "[data-modal-text-sertif-kedelapan]"
+);
+
+// modal toggle function
+const testimonialsModalSertifKedelapanFunc = function () {
+  modalContainerSertifKedelapan.classList.toggle("active");
+  overlaySertifKedelapan.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemSertifKedelapan.length; i++) {
+  testimonialsItemSertifKedelapan[i].addEventListener("click", function () {
+    modalImgSertifKedelapan.src = this.querySelector(
+      "[data-testimonials-avatar-sertif-kedelapan]"
+    ).src;
+    modalImgSertifKedelapan.alt = this.querySelector(
+      "[data-testimonials-avatar-sertif-kedelapan]"
+    ).alt;
+    modalTitleSertifKedelapan.innerHTML = this.querySelector(
+      "[data-testimonials-title-sertif-kedelapan]"
+    ).innerHTML;
+    modalTextSertifKedelapan.innerHTML = this.querySelector(
+      "[data-testimonials-text-sertif-kedelapan]"
+    ).innerHTML;
+
+    testimonialsModalSertifKedelapanFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnSertifKedelapan.addEventListener(
+  "click",
+  testimonialsModalSertifKedelapanFunc
+);
+overlaySertifKedelapan.addEventListener(
+  "click",
+  testimonialsModalSertifKedelapanFunc
+);
+
+//========================== TESTI KESEMBILAN ================================
+// testimonials variables 2
+const testimonialsItemSertifKesembilan = document.querySelectorAll(
+  "[data-testimonials-item-sertif-kesembilan]"
+);
+const modalContainerSertifKesembilan = document.querySelector(
+  "[data-modal-container-sertif-kesembilan]"
+);
+const modalCloseBtnSertifKesembilan = document.querySelector(
+  "[data-modal-close-btn-sertif-kesembilan]"
+);
+const overlaySertifKesembilan = document.querySelector(
+  "[data-overlay-sertif-kesembilan]"
+);
+
+// modal variable
+const modalImgSertifKesembilan = document.querySelector(
+  "[data-modal-img-sertif-kesembilan]"
+);
+const modalTitleSertifKesembilan = document.querySelector(
+  "[data-modal-title-sertif-kesembilan]"
+);
+const modalTextSertifKesembilan = document.querySelector(
+  "[data-modal-text-sertif-kesembilan]"
+);
+
+// modal toggle function
+const testimonialsModalSertifKesembilanFunc = function () {
+  modalContainerSertifKesembilan.classList.toggle("active");
+  overlaySertifKesembilan.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemSertifKesembilan.length; i++) {
+  testimonialsItemSertifKesembilan[i].addEventListener("click", function () {
+    modalImgSertifKesembilan.src = this.querySelector(
+      "[data-testimonials-avatar-sertif-kesembilan]"
+    ).src;
+    modalImgSertifKesembilan.alt = this.querySelector(
+      "[data-testimonials-avatar-sertif-kesembilan]"
+    ).alt;
+    modalTitleSertifKesembilan.innerHTML = this.querySelector(
+      "[data-testimonials-title-sertif-kesembilan]"
+    ).innerHTML;
+    modalTextSertifKesembilan.innerHTML = this.querySelector(
+      "[data-testimonials-text-sertif-kesembilan]"
+    ).innerHTML;
+
+    testimonialsModalSertifKesembilanFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnSertifKesembilan.addEventListener(
+  "click",
+  testimonialsModalSertifKesembilanFunc
+);
+overlaySertifKesembilan.addEventListener(
+  "click",
+  testimonialsModalSertifKesembilanFunc
+);
+//========================== TESTI KESEPULUH ================================
+// testimonials variables 2
+const testimonialsItemSertifKesepuluh = document.querySelectorAll(
+  "[data-testimonials-item-sertif-kesepuluh]"
+);
+const modalContainerSertifKesepuluh = document.querySelector(
+  "[data-modal-container-sertif-kesepuluh]"
+);
+const modalCloseBtnSertifKesepuluh = document.querySelector(
+  "[data-modal-close-btn-sertif-kesepuluh]"
+);
+const overlaySertifKesepuluh = document.querySelector(
+  "[data-overlay-sertif-kesepuluh]"
+);
+
+// modal variable
+const modalImgSertifKesepuluh = document.querySelector(
+  "[data-modal-img-sertif-kesepuluh]"
+);
+const modalTitleSertifKesepuluh = document.querySelector(
+  "[data-modal-title-sertif-kesepuluh]"
+);
+const modalTextSertifKesepuluh = document.querySelector(
+  "[data-modal-text-sertif-kesepuluh]"
+);
+
+// modal toggle function
+const testimonialsModalSertifKesepuluhFunc = function () {
+  modalContainerSertifKesepuluh.classList.toggle("active");
+  overlaySertifKesepuluh.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItemSertifKesepuluh.length; i++) {
+  testimonialsItemSertifKesepuluh[i].addEventListener("click", function () {
+    modalImgSertifKesepuluh.src = this.querySelector(
+      "[data-testimonials-avatar-sertif-kesepuluh]"
+    ).src;
+    modalImgSertifKesepuluh.alt = this.querySelector(
+      "[data-testimonials-avatar-sertif-kesepuluh]"
+    ).alt;
+    modalTitleSertifKesepuluh.innerHTML = this.querySelector(
+      "[data-testimonials-title-sertif-kesepuluh]"
+    ).innerHTML;
+    modalTextSertifKesepuluh.innerHTML = this.querySelector(
+      "[data-testimonials-text-sertif-kesepuluh]"
+    ).innerHTML;
+
+    testimonialsModalSertifKesepuluhFunc();
+  });
+}
+
+// add click event to modal close button
+modalCloseBtnSertifKesepuluh.addEventListener(
+  "click",
+  testimonialsModalSertifKesepuluhFunc
+);
+overlaySertifKesepuluh.addEventListener(
+  "click",
+  testimonialsModalSertifKesepuluhFunc
+);
+
 //========================== PORTFOLIO PERTAMA ================================
 // testimonials variables
 const testimonialsItemPort = document.querySelectorAll(
