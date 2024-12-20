@@ -2,1956 +2,717 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio">
-  <title>Portfolio Tio</title>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3048/3048122.png" type="image/x-icon">
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3048/3048122.png" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Portfolio - Tio Yudho Prasetio</title>
 </head>
 
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box" data-aos="fade-right">
-          <img src="./assets/images/about.png" alt="Tio Yudho Prasetio" width="80" loading="lazy">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Tio Yudho Prasetio"></h1>
-
-          <p class="title"></p>
-        </div>
-
-        <button class="info_more-btn" data-aos="fade-left" data-sidebar-btn>
-          <span>Lihat Kontak</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:tioyudhoprasetio33@gmail.com" class="contact-link">tioyudhoprasetio33@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Lokasi</p>
-
-              <address>Bekasi, Jawabarat, Indonesia.</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://instagram.com/tioprasetio_" target="_blank" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+   <!--==================== NAV ====================-->
+   <nav class="nav">
+      <ul class="nav__list">
+         <li>
+            <a href="#home" title="Beranda" class="nav__link active-link">
+               <i class="ri-home-line"></i>
             </a>
-          </li>
-
-          <li class="social-item linkedin">
-            <a href="https://www.linkedin.com/in/tioprasetio/" target="_blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
+         </li>
+         <li>
+            <a href="#projects" title="Portfolio" class="nav__link">
+               <i class="ri-folder-line"></i>
             </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navb">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Tentang</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Sertifikat</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Kontak</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="tentang">
-
-        <header>
-          <h2 class="h2 article-title">Tentang Saya</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Saya merupakan Mahasiswa aktif Universitas Esa Unggul dari Program Studi Teknik Informatika yang
-            memiliki ketertarikan dengan dunia programming dan memiliki pemahaman mengenai HTML, CSS, PHP,
-            maupun JavaScript dengan baik serta berdedikasi untuk menjadi Front-End Web Developer.
-          </p>
-        </section>
-
-
-        <!--
-          - softskill
-        -->
-
-        <section class="softskill">
-
-          <h3 class="h3 softskill-title">Apa kelebihan saya?</h3>
-
-          <ul class="softskill-list">
-
-            <li class="softskill-item" data-aos="fade-up">
-
-              <div class="softskill-icon-box">
-                <img src="./assets/images/hacker.png
-                            " alt="design icon" width="40" loading="lazy">
-              </div>
-
-              <div class="softskill-content-box">
-                <h4 class="h4 softskill-item-title">Hacker Mentality</h4>
-
-                <p class="softskill-item-text">
-                  Selalu ingin mengulik, antusias, dan semangat belajar mengenai programming
-                  juga tidak mudah menyerah ketika dihadapkan dengan masalah.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="softskill-item" data-aos="fade-up">
-
-              <div class="softskill-icon-box">
-                <img src="./assets/images/thinking.png
-                " alt="design icon" width="40" loading="lazy">
-              </div>
-
-              <div class="softskill-content-box">
-                <h4 class="h4 softskill-item-title">Critical Thinking</h4>
-
-                <p class="softskill-item-text">
-                  Mampu berpikir secara jernih dan rasional tentang apa yang harus dilakukan
-                  atau apa yang harus dipercaya.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="softskill-item" data-aos="fade-up">
-
-              <div class="softskill-icon-box">
-                <img src="./assets/images/problem-solving.png" alt="Web development icon" width="40" loading="lazy">
-              </div>
-
-              <div class="softskill-content-box">
-                <h4 class="h4 softskill-item-title">Problem Solving</h4>
-
-                <p class="softskill-item-text">
-                  Mampu mengidentifikasi dan menemukan solusi yang efektif untuk mengatasi
-                  masalah yang sedang dihadapi baik itu individu maupun team.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="softskill-item" data-aos="fade-up">
-
-              <div class="softskill-icon-box">
-                <img src="./assets/images/doc.png" alt="Web development icon" width="40" loading="lazy">
-              </div>
-
-              <div class="softskill-content-box">
-                <h4 class="h4 softskill-item-title">Googling & Baca dokumentasi</h4>
-
-                <p class="softskill-item-text">
-                  Kemampuan mencari sesuatu yang ingin dicari dengan google dan memahami
-                  dokumentasi dari sebuah teknologi dengan baik.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-          <a id="downMode" href="./assets/cv/cv_tio.pdf" download="cv_tio" target="_blank">
-            <button id="btnDown" class="form-btn btn-download" type="submit">
-              <div id="loading" class="loading"></div>
-              <ion-icon id="dwn" name="cloud-download"></ion-icon>
-              <ion-icon id="done" name="checkmark-circle-outline"></ion-icon>
-              <span class="info" id="info">Download CV</span>
-            </button>
-          </a>
-
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="medal-outline"></ion-icon>
+         </li>
+         <li>
+            <a href="#services" title="Kemampuan" class="nav__link">
+               <i class="ri-file-edit-line"></i>
+            </a>
+         </li>
+         <li>
+            <a href="#experience" title="Pengalaman" class="nav__link">
+               <i class="ri-honour-line"></i>
+            </a>
+         </li>
+         <li>
+            <a href="#sertif" title="Sertif" class="nav__link">
+               <i class="ri-file-list-3-line"></i>
+            </a>
+         </li>
+         <li>
+            <a href="#contact" title="Kontak" class="nav__link">
+               <i class="ri-send-plane-line"></i>
+            </a>
+         </li>
+      </ul>
+   </nav>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <!--===== PERFIL =====-->
+            <div class="perfil">
+               <img src="assets/img/home-perfil.png" alt="image" class="perfil__img">
+               <div class="perfil__data">
+                  <h1 class="perfil__name">Tio Yudho <br> Prasetio</h1>
+                  <div class="perfil__buttons">
+                     <a href="#projects" class="button">Projects</a>
+                     <a href="#services" class="button button__black">Services</a>
+                  </div>
+               </div>
+            </div>
+            <!--===== INFO =====-->
+            <div class="info">
+               <div class="info__data">
+                  <div class="info__circle">
+                  </div>
+                  <div class="info__name">Tio Yudho Prasetio</div>
+               </div>
+               <div class="info__image">
+                  <img src="assets/img/about-perfil.png" alt="image" class="info__img">
+               </div>
+               <p class="info__description">
+                  Bersemangat untuk membuat dan mendesain situs web dengan antarmuka menarik terbaik.
+               </p>
+               <a href="assets/pdf/cv_tio.pdf" download target="_blank" class="button button__black">Download CV</a>
             </div>
 
-            <h3 class="h3">Pendidikan</h3>
-          </div>
+            <!--===== ABOUT =====-->
+            <div class="about">
+               <h3 class="about__name">Tio Yudho Prasetio - <br> Web Developer</h3>
 
-          <ol class="timeline-list">
+               <!-- <p class="about__description">
+                  Saya merupakan Mahasiswa aktif Universitas Esa Unggul dari Program Studi Teknik Informatika yang memiliki ketertarikan
+                  dengan dunia programming dan memiliki pemahaman mengenai HTML, CSS, PHP, maupun JavaScript dengan baik serta berdedikasi
+                  untuk menjadi Front-End Web Developer.
+               </p> -->
+               <div class="about__image">
+                  <img src="assets/img/about-perfil.png" alt="image" class="about__img">
+               </div>
+               <div class="about__social">
+                  <a href="https://www.linkedin.com/in/tioprasetio/" target="_blank" class="about__link">
+                     <i class="ri-linkedin-box-line"></i>
+                  </a>
+                  <a href="https://www.instagram.com/tioprasetio_" target="_blank" class="about__link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+               </div>
+               <p class="about__note">
+                  Saya merupakan Mahasiswa aktif Universitas Esa Unggul dari Program Studi Teknik Informatika yang
+                  memiliki ketertarikan
+                  dengan dunia programming dan memiliki pemahaman mengenai HTML, CSS, PHP, maupun JavaScript dengan baik
+                  serta berdedikasi
+                  untuk menjadi Front-End Web Developer.
+               </p>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"><img src="assets/images/ueu.png" height="22px" width="22px"
-                  loading="lazy">&nbsp;&nbsp;Universitas Esa Unggul</h4>
-
-              <span>2022 - Sekarang</span>
-
-              <p class="timeline-text">
-                S1 Teknik Informatika
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"><img src="assets/images/tels.png" height="22px" width="22px"
-                  loading="lazy">&nbsp;&nbsp;SMK Telekomunikasi Telesandi</h4>
-
-              <span>2019 — 2022</span>
-
-              <p class="timeline-text">
-                Rekayasa Perangkat Lunak, Rata-rata Nilai US 84,38
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
+               <a href="#contact" class="button">Contact me</a>
             </div>
 
-            <h3 class="h3">Pengalaman</h3>
-          </div>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"><img src="assets/images/pptik.png" height="22px" width="22px"
-                  loading="lazy">&nbsp;&nbsp;Praktik Kerja Lapangan (PKL)</h4>
-
-              <span>Nov 2020 — Feb 2021</span>
-
-              <p class="timeline-text">
-                Menjalani PKL di Pusat Penelitian Teknologi Informasi & Komunikasi - Institut Teknologi Bandung
-                (PPTIK-ITB)
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Kemampuan</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" height="25px" width="22px"
-                  loading="lazy">&nbsp;
-                <h5 class="h5">PHP</h5>&nbsp;
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" height="16px" width="16px"
-                  loading="lazy">&nbsp;
-                <h5 class="h5">JavaScript</h5>&nbsp;
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968389.png" height="16px" width="16px"
-                  loading="lazy">&nbsp;
-                <h5 class="h5">VB.Net</h5>&nbsp;
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" height="16px" width="16px"
-                  loading="lazy">&nbsp;
-                <h5 class="h5">c++</h5>&nbsp;
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" height="16px" width="16px"
-                  loading="lazy">&nbsp;
-                <h5 class="h5">Python</h5>&nbsp;
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" height="16px" width="16px"
-                  loading="lazy">&nbsp;
-                <h5 class="h5">UI Design</h5>&nbsp;
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
+            <!--===== SKILLS =====-->
+            <div class="skills">
+               <h2 class="skills__title">Skills</h2>
+               <div class="skills__items">
+                  <!-- JS -->
+                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="image" class="skills__item">
+                  <!-- TAILWIND -->
+                  <img src="https://img.icons8.com/?size=96&id=4PiNHtUJVbLs&format=png" alt="image"
+                     class="skills__item">
+                  <!-- PHP -->
+                  <img src="https://icon.icepanel.io/Technology/svg/Laravel.svg" alt="image" class="skills__item">
+                  <!-- <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="image" class="skills__item"> -->
+                  <!-- VB.NET -->
+                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968389.png" alt="image" class="skills__item">
+                  <!-- C++ -->
+                  <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="image" class="skills__item">
+                  <!-- PYTHON -->
+                  <img src="https://pngimg.com/d/mysql_PNG23.png" alt="image" class="skills__item">
+                  <!-- JAVA -->
+                  <img src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="image" class="skills__item">
+                  <!-- FIGMA -->
+                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="image" class="skills__item">
+               </div>
+               <p class="skills__description">
+                  Kunjungi bagian proyek untuk melihat pekerjaan yang dilakukan dengan teknologi web ini
+               </p>
+            </div>
 
 
+         </div>
+      </section>
+
+      <!--==================== PENDIDIKAN ====================-->
+      <section class="pendidikan section">
+         <h2 class="section__title">PENDIDIKAN</h2>
+         <div class="pendidikan__container container grid">
+            <article class="pendidikan__card">
+               <h2 class="pendidikan__company">
+                  Universitas Esa Unggul
+               </h2>
+               <div class="pendidikan__data">
+                  <h3 class="pendidikan__profession">
+                     <img class="pendidikan__icon" src="assets/img/ueu.png" alt="image">
+                     S1 Teknik Informatika
+                  </h3>
+                  <span class="pendidikan__date">2022 - Sekarang</span>
+                  <p class="pendidikan__description">
+                     IPK: 3.64/4.00
+                  </p>
+               </div>
+            </article>
+
+            <article class="pendidikan__card">
+               <h2 class="pendidikan__company">
+                  SMK Telekomunikasi Telesandi Bekasi
+               </h2>
+               <div class="pendidikan__data">
+                  <h3 class="pendidikan__profession">
+                     <img class="pendidikan__icon" src="assets/img/tels.png" alt="image">
+                     Rekayasa Perangkat Lunak
+                  </h3>
+                  <span class="pendidikan__date">2019 - 2022</span>
+                  <p class="pendidikan__description">
+                     Rata-rata Nilai US 84.38
+                  </p>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+
+         <h2 class="section__title">PORTFOLIO</h2>
+
+         <div class="projects__container container grid">
+            <article class="projects__card">
+               <a href="https://cryptueu.vercel.app/" target="_blank" class="projects__image">
+                  <img src="assets/img/portfolio/projects-9.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="projects__img">
+               </a>
+               <div class="projects__data">
+                  <h3 class="projects__name">CryptUEU</h3>
+                  <p class="projects__description">Cryptueu adalah aplikasi web berbasis RSA yang dirancang untuk
+                     memenuhi tugas akhir mata kuliah kriptografi,
+                     memungkinkan pengguna untuk melakukan enkripsi dan dekripsi data dengan aman melalui antarmuka yang
+                     sederhana dan
+                     intuitif.
+                  </p>
+                  <div class="projects__skills">
+                     <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="image"
+                        class="projects__skill">
+                     <img src="https://img.icons8.com/?size=96&id=4PiNHtUJVbLs&format=png" alt="image"
+                        class="projects__skill">
+                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="image"
+                        class="projects__skill">
+                  </div>
+                  <a href="https://cryptueu.vercel.app/" target="_blank" class="projects__button">
+                     <i class="ri-link"></i>
+                     <span>Visit Project</span>
+                  </a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <a class="projects__image">
+                  <img src="assets/img/portfolio/projects-8.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="projects__img">
+               </a>
+               <div class="projects__data">
+                  <h3 class="projects__name">IoT Helath Monitor</h3>
+                  <p class="projects__description">IoT Health Monitor adalah aplikasi mobile berbasis Java yang memantau
+                     detak jantung dan suhu tubuh secara real-time
+                     dengan sensor yang terhubung melalui ESP32 dan memberikan notifikasi anomali, dibuat untuk memenuhi
+                     tugas akhir mata kuliah Pemrograman Mobile.
+                  </p>
+                  <div class="projects__skills">
+                     <img src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="image"
+                        class="projects__skill">
+                  </div>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <a href="https://hirein.web.id/" target="_blank" class="projects__image">
+                  <img src="assets/img/portfolio/projects-7.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="projects__img">
+               </a>
+               <div class="projects__data">
+                  <h3 class="projects__name">HireIn</h3>
+                  <p class="projects__description">HireIn adalah platform online yang mempertemukan freelancer dengan
+                     klien dalam berbagai kategori seperti programming dan
+                     desain, membantu kolaborasi proyek dengan mudah dan efisien.
+                  </p>
+                  <div class="projects__skills">
+                     <img src="https://icon.icepanel.io/Technology/svg/Laravel.svg" alt="image" class="projects__skill">
+                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="image"
+                        class="projects__skill">
+                     <img src="https://img.icons8.com/?size=96&id=4PiNHtUJVbLs&format=png" alt="image"
+                        class="projects__skill">
+                  </div>
+                  <a href="https://hirein.web.id/" target="_blank" class="projects__button">
+                     <i class="ri-link"></i>
+                     <span>Visit Project</span>
+                  </a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <a class="projects__image">
+                  <img src="assets/img/portfolio/projects-6.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="projects__img">
+               </a>
+               <div class="projects__data">
+                  <h3 class="projects__name">BoRie - Website Review Buku</h3>
+                  <p class="projects__description">BoRie adalah program berbasis Laravel 11 yang membantu pembaca
+                     memilih buku melalui ulasan dan rekomendasi, dibuat
+                     sebagai Tugas Akhir di Jabar Digital Academy.
+                  </p>
+                  <div class="projects__skills">
+                     <img src="https://icon.icepanel.io/Technology/svg/Laravel.svg" alt="image" class="projects__skill">
+                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="image"
+                        class="projects__skill">
+                     <img src="https://img.icons8.com/?size=96&id=EzPCiQUqWWEa&format=png" alt="image"
+                        class="projects__skill">
+                  </div>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <a class="projects__image">
+                  <img src="assets/img/portfolio/projects-5.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="projects__img">
+               </a>
+               <div class="projects__data">
+                  <h3 class="projects__name">P3K Teknik Informatika</h3>
+                  <p class="projects__description">Aplikasi ini berbasis web untuk memenuhi tugas akhir mata kuliah
+                     rekayasa perangkat lunak, memungkinkan pengiriman
+                     laporan darurat ke admin untuk penanganan di lingkungan kampus.
+                  </p>
+                  <div class="projects__skills">
+                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="image"
+                        class="projects__skill">
+                     <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="image"
+                        class="projects__skill">
+                  </div>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <a href="https://tioprasetio-lovetest.vercel.app/" target="_blank" class="projects__image">
+                  <img src="assets/img/portfolio/projects-4.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="projects__img">
+               </a>
+               <div class="projects__data">
+                  <h3 class="projects__name">LoveTest - Aplikasi Tes Kecocokan Pasangan</h3>
+                  <p class="projects__description">Website ini dibuat menggunakan JavaScript, terinspirasi dari tugas
+                     Coding Festival mata kuliah Algoritma yang sebelumnya
+                     menggunakan C++, agar dapat digunakan oleh banyak orang.
+                  </p>
+                  <div class="projects__skills">
+                     <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="image"
+                        class="projects__skill">
+                     <img src="https://img.icons8.com/?size=96&id=4PiNHtUJVbLs&format=png" alt="image"
+                        class="projects__skill">
+                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="image"
+                        class="projects__skill">
+                  </div>
+                  <a href="https://tioprasetio-lovetest.vercel.app/" target="_blank" class="projects__button">
+                     <i class="ri-link"></i>
+                     <span>Visit Project</span>
+                  </a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <a class="projects__image">
+                  <img src="assets/img/portfolio/projects-3.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="projects__img">
+               </a>
+               <div class="projects__data">
+                  <h3 class="projects__name">TelSPP - Aplikasi Laporan Pembayaran SPP berbasis Web</h3>
+                  <p class="projects__description">Aplikasi ini dibuat menggunakan PHP dan MySQL untuk memudahkan
+                     pengelolaan data pembayaran SPP siswa, sebagai tugas mata
+                     pelajaran “Kerja Project kelas 12” di SMK Telekomunikasi Telesandi.
+                  </p>
+                  <div class="projects__skills">
+                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="image"
+                        class="projects__skill">
+                     <img src="https://img.icons8.com/?size=96&id=EzPCiQUqWWEa&format=png" alt="image"
+                        class="projects__skill">
+                  </div>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <a class="projects__image">
+                  <img src="assets/img/portfolio/projects-2.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="projects__img">
+               </a>
+               <div class="projects__data">
+                  <h3 class="projects__name">Aplikasi Kasir Kantin Berbasis Desktop</h3>
+                  <p class="projects__description">Aplikasi ini dibuat menggunakan Visual Studio dan XAMPP, terkoneksi
+                     MySQL, untuk memudahkan penghitungan harga makanan
+                     sebagai tugas “Kerja Project kelas 11” di SMK Telekomunikasi Telesandi.
+                  </p>
+                  <div class="projects__skills">
+                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968389.png" alt="image"
+                        class="projects__skill">
+                  </div>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <a href="https://janjijiwa.vercel.app/" target="_blank" class="projects__image">
+                  <img src="assets/img/portfolio/projects-1.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="projects__img">
+               </a>
+               <div class="projects__data">
+                  <h3 class="projects__name">Web Fantasi kopi Janji Jiwa</h3>
+                  <p class="projects__description">Website ini merupakan website statis yang terinspirasi dari kopi
+                     Janji jiwa, di dalam website ini berisikan daftar menu
+                     dan harga yang ada di Kopi Janji jiwa dan website ini sudah disematkan fitur dark mode atau mode
+                     gelap.
+                  </p>
+                  <div class="projects__skills">
+                     <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="image"
+                        class="projects__skill">
+                     <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="image"
+                        class="projects__skill">
+                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="image"
+                        class="projects__skill">
+                  </div>
+                  <a href="https://janjijiwa.vercel.app/" target="_blank" class="projects__button">
+                     <i class="ri-link"></i>
+                     <span>Visit Project</span>
+                  </a>
+               </div>
+            </article>
+         </div>
 
 
 
-      <!--
-        - #PORTFOLIO
-      -->
 
-      <article class="portfolio" data-page="portfolio">
+      </section>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+         <h2 class="section__title">KEMAMPUAN SAYA</h2>
+         <div class="services__container container grid">
+            <article class="services__card">
+               <div class="services__icon">
+                  <div class="services__circle"></div>
+                  <i class="ri-code-box-line"></i>
+               </div>
+               <h3 class="services__name">Web Development</h3>
+               <p class="services__description">menyediakan solusi pembuatan dan pengelolaan website yang modern,
+                  responsif, dan sesuai kebutuhan, membantu bisnis Anda
+                  tampil profesional dan menjangkau lebih banyak audiens secara online.
+               </p>
+            </article>
+            <article class="services__card">
+               <div class="services__icon">
+                  <div class="services__circle"></div>
+                  <i class="ri-pen-nib-line"></i>
+               </div>
+               <h3 class="services__name">Web Design</h3>
+               <p class="services__description">menghadirkan desain website yang menarik, responsif, dan user-friendly,
+                  memastikan pengalaman pengguna yang optimal dan
+                  mendukung identitas brand Anda secara visual.
+               </p>
+            </article>
+         </div>
+      </section>
 
-        <section class="projects">
+      <!--==================== EXPERIENCE ====================-->
+      <section class="experience section" id="experience">
+         <h2 class="section__title">PENGALAMAN ATAU PEKERJAAN</h2>
+         <div class="experience__container container grid">
+            <article class="experience__card">
+               <h2 class="experience__company">Jabar Digital Academy</h2>
+               <div class="experience__data">
+                  <h3 class="experience__profession">Fullstack Laravel Web Developer</h3>
+                  <span class="experience__date">Feb/24 - Mei/24</span>
+                  <p class="experience__description">
+                     Lolos ke Fase 2 pelatihan Full Stack Web Developer yang diselenggarakan oleh Pemprov Jawa Barat
+                     melalui program Jabar Digital Academy yang menggandeng Alkademi dengan materi Laravel.
+                  </p>
+               </div>
+            </article>
 
-          <ul class="filter-list">
+            <article class="experience__card">
+               <h2 class="experience__company">PPTIK-ITB</h2>
+               <div class="experience__data">
+                  <h3 class="experience__profession">Praktik Kerja Lapangan</h3>
+                  <span class="experience__date">Nov/20 - Feb/21</span>
+                  <p class="experience__description">
+                     Melakukan proses pembuatan alat Hand Sanitizer Otomatis dan Smoke Detector dari awal hingga akhir
+                     menggunakan Arduino Uno dengan hasil penilaian 90.
+                  </p>
+               </div>
+            </article>
+         </div>
+      </section>
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>Semua</button>
-            </li>
+      <!--==================== SERTIFIKAT ====================-->
+      <section class="sertif section" id="sertif">
 
-            <li class="filter-item">
-              <button data-filter-btn>Landing Page</button>
-            </li>
+         <h2 class="section__title">SERTIFIKAT</h2>
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
+         <div class="sertif__container container grid">
+            <article class="sertif__card">
+               <a class="sertif__image">
+                  <img src="assets/img/sertifikat/sertif8.png" alt="image" class="sertif__img">
+               </a>
+               <div class="sertif__data">
+                  <h3 class="sertif__name">Jabar Digital Academy'24</h3>
+                  <p class="sertif__description">Serifikat ini saya dapatkan ketika menyelesaikan program Jabar
+                     Digital Academy.
+                  </p>
+                  <div class="sertif__skills">
+                     <span>18 Juli 2024</span>
+                  </div>
+               </div>
+            </article>
 
-            <li class="filter-item">
-              <button data-filter-btn>UI Design</button>
-            </li>
+            <article class="sertif__card">
+               <a class="sertif__image">
+                  <img src="assets/img/sertifikat/sertif7.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="sertif__img">
+               </a>
+               <div class="sertif__data">
+                  <h3 class="sertif__name">Belajar Dasar Structured Query Language (SQL)</h3>
+                  <p class="sertif__description">Sertifikat ini saya dapatkan setelah menyelesaikan kursus online
+                     mengenai query dasar SQL di platform pembelajaran
+                     Dicoding.
+                  </p>
+                  <div class="sertif__skills">
+                     <span>19 April 2024</span>
+                  </div>
+               </div>
+            </article>
 
-          </ul>
+            <article class="sertif__card">
+               <a class="sertif__image">
+                  <img src="assets/img/sertifikat/sertif6.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="sertif__img">
+               </a>
+               <div class="sertif__data">
+                  <h3 class="sertif__name">Belajar Dasar Pemrograman Web</h3>
+                  <p class="sertif__description">Sertifikat ini saya dapatkan setelah menyelesaikan kursus online
+                     mengenai Pemrograman Web di platform pembelajaran
+                     Dicoding.
+                  </p>
+                  <div class="sertif__skills">
+                     <span>19 April 2024</span>
+                  </div>
+               </div>
+            </article>
 
-          <div class="filter-select-box">
+            <article class="sertif__card">
+               <a class="sertif__image">
+                  <img src="assets/img/sertifikat/sertif5.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="sertif__img">
+               </a>
+               <div class="sertif__data">
+                  <h3 class="sertif__name">Belajar Dasar Pemrograman JavaScript</h3>
+                  <p class="sertif__description">Sertifikat ini saya dapatkan setelah menyelesaikan kursus online
+                     mengenai JavaScript di platform pembelajaran
+                     Dicoding.
+                  </p>
+                  <div class="sertif__skills">
+                     <span>14 Maret 2024</span>
+                  </div>
+               </div>
+            </article>
 
-            <button class="filter-select" data-select>
+            <article class="sertif__card">
+               <a class="sertif__image">
+                  <img src="assets/img/sertifikat/sertif4.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="sertif__img">
+               </a>
+               <div class="sertif__data">
+                  <h3 class="sertif__name">Coding Festival</h3>
+                  <p class="sertif__description">Sertifikat ini saya dapatkan setelah mengikuti Coding Festival yang
+                     wajib bagi Mahasiswa Fakultas Ilmu Komputer
+                     Universitas Esa Unggul Bekasi.
+                  </p>
+                  <div class="sertif__skills">
+                     <span>8 Mei 2023</span>
+                  </div>
+               </div>
+            </article>
 
-              <div class="select-value" data-selecct-value>Pilih Kategori</div>
+            <article class="sertif__card">
+               <a class="sertif__image">
+                  <img src="assets/img/sertifikat/sertif3.jpg" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="sertif__img">
+               </a>
+               <div class="sertif__data">
+                  <h3 class="sertif__name">Certificate Of Expertise Level II</h3>
+                  <p class="sertif__description">Sertifikat ini saya dapatkan pada saat menjalani Ujian Praktek
+                     Kompetensi Keahlian Web Programming di SMK Telekomunikasi
+                     Telesandi dengan Skor 90.
+                  <div class="sertif__skills">
+                     <span>Agustus 2021</span>
+                  </div>
+               </div>
+            </article>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
+            <article class="sertif__card">
+               <a class="sertif__image">
+                  <img src="assets/img/sertifikat/sertif2.png" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="sertif__img">
+               </a>
+               <div class="sertif__data">
+                  <h3 class="sertif__name">JavaScript Intermediate</h3>
+                  <p class="sertif__description">Sertifikat ini saya dapatkan setelah menyelesaikan kursus JavaScript
+                     di SoloLearn.
+                  <div class="sertif__skills">
+                     <span>15 Agustus 2021</span>
+                  </div>
+               </div>
+            </article>
 
-            </button>
+            <article class="sertif__card">
+               <a class="sertif__image">
+                  <img src="assets/img/sertifikat/sertif1.jpg" alt="Tio Yudho Prasetio, Tio Yudho, Tio Prasetio, Tio"
+                     class="sertif__img">
+               </a>
+               <div class="sertif__data">
+                  <h3 class="sertif__name">Internet Of Things (IoT)</h3>
+                  <p class="sertif__description">Sertifikat ini saya dapatkan setelah menyelesaikan PKL selama 3 bulan
+                     di PPTIK-ITB, bekerja sama dengan Laboratorium IoT
+                     Universitas Bandar Lampung.
+                  <div class="sertif__skills">
+                     <span>24 Juni 2021</span>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
 
-            <ul class="select-list">
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <h2 class="section__title">KONTAK SAYA</h2>
+         <div id="customAlert" class="alert hidden">
+            <span id="alertMessage">Pesan notifikasi</span>
+            <button class="close-btn" onclick="hideAlert()">×</button>
+         </div>
 
-              <li class="select-item">
-                <button data-select-item>Semua</button>
-              </li>
+         <div class="contact__container container grid">
+            <form action="" class="contact__form grid" id="contact-form" name="portfolio-contact-form" data-form>
+               <div class="contact__group grid">
+                  <input type="text" name="nama" placeholder="Nama" required class="contact__input">
+                  <input type="email" name="email" placeholder="Email" required class="contact__input">
+               </div>
+               <textarea name="pesan" placeholder="Pesan" class="contact__input contact__area"></textarea>
+               <button type="submit" class="button contact__button btn-kirim">Kirim pesan</button>
+               <button class="button contact__button btn-loading d-none" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Proses...
+               </button>
+               <p class="contact__message" id="contact-message"></p>
+            </form>
+         </div>
+      </section>
+   </main>
 
-              <li class="select-item">
-                <button data-select-item>Landing Page</button>
-              </li>
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div class="footer__content grid">
+            <a href="#" class="footer__logo">TioYudho</a>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
+            <ul class="footer__links">
+               <li>
+                  <a href="#home" class="footer__link">Beranda</a>
+               </li>
 
-              <li class="select-item">
-                <button data-select-item>UI Design</button>
-              </li>
+               <li>
+                  <a href="#projects" class="footer__link">Portfolio</a>
+               </li>
 
+               <li>
+                  <a href="#services" class="footer__link">Kemampuan</a>
+               </li>
             </ul>
+         </div>
 
-          </div>
-
-          <!--========================== PORTFOLIO PERTAMA ================================-->
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="landing page"
-              data-testimonials-item-portfolio>
-
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src="./assets/images/portfolio/1.png" alt="janjijiwa" loading="lazy"
-                  data-testimonials-avatar-portfolio>
-              </figure>
-
-              <h3 class="project-title" data-testimonials-title-portfolio>Web Fantasi Janji Jiwa</h3>
-
-              <p class="project-category">Landing Page</p>
-
-              <p class="project-category blog-text testimonials-text" data-testimonials-text-portfolio>
-                Ini adalah fantasi website dari Janji Jiwa yang saya buat, yang berisikan daftar menu dan harga dari
-                Janji Jiwa supaya
-                orang tau daftar menu dan harga dari Janji Jiwa tanpa harus ke lokasi. Website ini juga ditujukan
-                sebagai portfolio
-                untuk saya pribadi.
-              </p>
-
-              </a>
-            </li>
-
-            <!--========================== PORTFOLIO KEDUA ================================-->
-            <li class="project-item  active" data-filter-item data-category="landing page"
-              data-testimonials-item-portfolio-kedua>
-
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src="./assets/images/portfolio/2.png" alt="bekasi" loading="lazy"
-                  data-testimonials-avatar-portfolio-kedua>
-              </figure>
-
-              <h3 class="project-title" data-testimonials-title-portfolio-kedua>Wisata Bekasi</h3>
-
-              <p class="project-category">Landing Page</p>
-
-              <p class="project-category blog-text testimonials-text" data-testimonials-text-portfolio-kedua>
-                Website ini dibuat dengan tujuan memberikan informasi kepada masyarakat tentang objek wisata yang ada di
-                Bekasi, dan
-                membuktikan bahwasannya bekasi bukan selalu tentang industri!
-              </p>
-
-              </a>
-            </li>
-
-            <!--========================== PORTFOLIO KETIGA ================================-->
-            <li class="project-item  active" data-filter-item data-category="applications"
-              data-testimonials-item-portfolio-ketiga>
-              <!-- <a href=""> -->
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src="./assets/images/portfolio/3.png" alt="aplikasi kasir kantin" loading="lazy"
-                  data-testimonials-avatar-portfolio-ketiga>
-              </figure>
-
-              <h3 class="project-title" data-testimonials-title-portfolio-ketiga>Aplikasi Kasir Kantin Berbasis Desktop
-              </h3>
-
-              <p class="project-category">Applications</p>
-
-              <p class="project-category blog-text testimonials-text" data-testimonials-text-portfolio-ketiga>
-                Aplikasi ini dibuat menggunakan Visual Studio dan XAMPP, dan Aplikasi ini juga dikoneksikan dengan
-                database. Tujuan saya
-                membuat Aplikasi ini adalah untuk memudahkan saat melakukan transaksi.
-              </p>
-              <!-- </a> -->
-            </li>
-
-            <!--========================== PORTFOLIO KEEMPAT ================================-->
-            <li class="project-item  active" data-filter-item data-category="applications"
-              data-testimonials-item-portfolio-keempat>
-              <!-- <a href=""> -->
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src="./assets/images/portfolio/4.png" alt="Aplikasi laporan pembayaran SPP" loading="lazy"
-                  data-testimonials-avatar-portfolio-keempat>
-              </figure>
-
-              <h3 class="project-title" data-testimonials-title-portfolio-keempat>Aplikasi Laporan Pembayaran SPP
-                Berbasis Web</h3>
-
-              <p class="project-category">Applications</p>
-
-              <p class="project-category blog-text testimonials-text" data-testimonials-text-portfolio-keempat>
-                Aplikasi ini dibuat menggunakan bahasa pemrograman PHP, tentunya Aplikasi ini juga dikoneksikan dengan
-                database. Tujuan
-                saya membuat Aplikasi ini adalah untuk memudahkan saat melakukan pembayaran SPP.
-              </p>
-              <!-- </a> -->
-            </li>
-
-            <!--========================== PORTFOLIO KELIMA ================================-->
-            <li class="project-item  active" data-filter-item data-category="applications"
-              data-testimonials-item-portfolio-kelima>
-
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src="./assets/images/portfolio/5.png" alt="Love test" loading="lazy"
-                  data-testimonials-avatar-portfolio-kelima>
-              </figure>
-
-              <h3 class="project-title" data-testimonials-title-portfolio-kelima>Aplikasi Test kecocokan pasangan</h3>
-
-              <p class="project-category">Applications</p>
-
-              <p class="project-category blog-text testimonials-text" data-testimonials-text-portfolio-kelima>
-                Website ini merupakan website statis, terinspirasi dari tugas pada kegiatan Coding Festival mata kuliah
-                Algoritma dengan
-                studi kasus yang sama namun menggunakan bahasa pemrograman C++. Tetapi disini saya ingin supaya bisa
-                digunakan oleh orang
-                banyak, oleh karenanya saya membuat menjadi website dengan mengimplementasikan bahasa pemrograman
-                JavaScript sebagai pengganntinya
-                supaya bisa digunakan oleh orang lain.
-              </p>
-
-              </a>
-            </li>
-
-            <!--========================== PORTFOLIO KEENAM ================================-->
-            <li class="project-item  active" data-filter-item data-category="ui design"
-              data-testimonials-item-portfolio-keenam>
-              <!-- <a href=""> -->
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src="./assets/images/portfolio/6.png" alt="Coffee Ordering Apps" loading="lazy"
-                  data-testimonials-avatar-portfolio-keenam>
-              </figure>
-
-              <h3 class="project-title" data-testimonials-title-portfolio-keenam>UI Design Coffee Ordering Apps</h3>
-
-              <p class="project-category">UI Design</p>
-
-              <p class="project-category blog-text testimonials-text" data-testimonials-text-portfolio-keenam>
-                Desain Aplikasi mobile sederhana ini bertemakan Neumorphism yang dapat memudahkan pengguna karena bersih
-                dan elegan.
-                Terdapat 3 bagian, yaitu Home, Detail, dan Keranjang. Pada bagian Home, pengguna disuguhkan menu dengan
-                kategori dan
-                menu populer. Selanjutnya di bagian Detail, berfungsi untuk melihat detail menu dan juga memasukkan menu
-                ke dalam
-                keranjang, dan di bagian keranjang tersebut pengguna bisa melakukan pemesanan sesuai yang dimasukkan ke
-                dalam keranjang.
-              </p>
-              <!-- </a> -->
-            </li>
-
-            <!--========================== PORTFOLIO KETUJUH ================================-->
-            <li class="project-item  active" data-filter-item data-category="applications"
-              data-testimonials-item-portfolio-ketujuh>
-              <!-- <a href=""> -->
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src="./assets/images/portfolio/7.png" alt="P3K Teknik Informatika" loading="lazy"
-                  data-testimonials-avatar-portfolio-ketujuh>
-              </figure>
-
-              <h3 class="project-title" data-testimonials-title-portfolio-ketujuh>Aplikasi P3K Teknik Informatika</h3>
-
-              <p class="project-category">Applications</p>
-
-              <p class="project-category blog-text testimonials-text" data-testimonials-text-portfolio-ketujuh>
-                Program aplikasi ini berbasis website menggunakan bahasa pemrograman PHP untuk memenuhi tugas pada
-                matakuliah
-                Rekayasa Perangkat Lunak. Konsep aplikasi ini adalah mahasiswa dapat mengirim pesan atau laporan darurat
-                ketika
-                berada di lingkungan kampus, yang nantinya dapat diterima oleh admin untuk dilakukan penanganan.
-                Aplikasi ini baru hanya berlaku untuk mahasiswa/i Teknik Informatika Universitas Esa Unggul Bekasi.
-              </p>
-              <!-- </a> -->
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--- portfolio modal --->
-      <div class="modal-container" data-modal-container-portfolio>
-
-        <div class="overlay" data-overlay-portfolio></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-portfolio>
-            <ion-icon name="close-outline" data-modal-close-btn-portfolio></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/portfolio/1.png" alt="" width="80" loading="lazy" data-modal-img-portfolio>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-portfolio>Web Fantasi janjijiwa</h4>
-
-            <time datetime="2021-10-24">24 Oktober 2021</time>
-
-            <p data-modal-text-portfolio>
-              Ini adalah fantasi website dari Janji Jiwa yang saya buat, yang berisikan daftar menu dan harga dari Janji
-              Jiwa supaya
-              orang tau daftar menu dan harga dari Janji Jiwa tanpa harus ke lokasi. Website ini juga ditujukan sebagai
-              portfolio
-              untuk saya pribadi.
-            </p>
-
-            <button class="modal-close-btn2">
-              <a href="https://janjijiwa.vercel.app" target="_blank">Lihat</a>
-            </button>
-
-          </div>
-
-        </section>
-
+         <div class="footer__social">
+            <a href="https://www.linkedin.com/in/tioprasetio/" target="_blank" class="footer__social-link">
+               <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a href="https://instagram.com/tioprasetio_" target="_blank" class="footer__social-link">
+               <i class="ri-instagram-line"></i>
+            </a>
+         </div>
       </div>
-
-      <!--- portfolio modal kedua --->
-      <div class="modal-container" data-modal-container-portfolio-kedua>
-
-        <div class="overlay" data-overlay-portfolio-kedua></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-portfolio-kedua>
-            <ion-icon name="close-outline" data-modal-close-btn-portfolio-kedua></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/portfolio/2.png" alt="" width="80" loading="lazy"
-                data-modal-img-portfolio-kedua>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-portfolio-kedua>Wisata Bekasi</h4>
-
-            <time datetime="2021-08-13">13 Agustus 2021</time>
-
-            <p data-modal-text-portfolio-kedua>
-              Website ini dibuat dengan tujuan memberikan informasi kepada masyarakat tentang objek wisata yang ada di
-              Bekasi, dan
-              membuktikan bahwasannya bekasi bukan selalu tentang industri!
-            </p>
-
-            <button class="modal-close-btn2">
-              <a href="https://bekasi.vercel.app" target="_blank">Lihat</a>
-            </button>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--- portfolio modal ketiga --->
-      <div class="modal-container" data-modal-container-portfolio-ketiga>
-
-        <div class="overlay" data-overlay-portfolio-ketiga></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-portfolio-ketiga>
-            <ion-icon name="close-outline" data-modal-close-btn-portfolio-ketiga></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/portfolio/3.png" alt="" width="80" loading="lazy"
-                data-modal-img-portfolio-ketiga>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-portfolio-ketiga>Aplikasi Kasir Kantin Berbasis Desktop</h4>
-
-            <time datetime="2021-05-29">29 Mei 2021</time>
-
-            <p data-modal-text-portfolio-ketiga>
-              Aplikasi ini dibuat menggunakan Visual Studio dan XAMPP, dan Aplikasi ini juga dikoneksikan dengan
-              database. Tujuan saya
-              membuat Aplikasi ini adalah untuk memudahkan saat melakukan transaksi.
-            </p>
-
-            <!-- <button class="modal-close-btn2">
-              <a href="https://bekasi.vercel.app" target="_blank">Lihat</a>
-            </button> -->
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--- portfolio modal keempat --->
-      <div class="modal-container" data-modal-container-portfolio-keempat>
-
-        <div class="overlay" data-overlay-portfolio-keempat></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-portfolio-keempat>
-            <ion-icon name="close-outline" data-modal-close-btn-portfolio-keempat></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/portfolio/4.png" alt="" width="80" loading="lazy"
-                data-modal-img-portfolio-keempat>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-portfolio-keempat>Aplikasi Laporan Pembayaran SPP berbasis Web
-            </h4>
-
-            <time datetime="2022-03-30">30 Maret 2022</time>
-
-            <p data-modal-text-portfolio-keempat>
-              Aplikasi ini dibuat menggunakan bahasa pemrograman PHP, tentunya Aplikasi ini juga dikoneksikan dengan
-              database. Tujuan
-              saya membuat Aplikasi ini adalah untuk memudahkan saat melakukan pembayaran SPP.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--- portfolio modal kelima --->
-      <div class="modal-container" data-modal-container-portfolio-kelima>
-
-        <div class="overlay" data-overlay-portfolio-kelima></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-portfolio-kelima>
-            <ion-icon name="close-outline" data-modal-close-btn-portfolio-kelima></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/portfolio/5.png" alt="" width="80" loading="lazy"
-                data-modal-img-portfolio-kelima>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-portfolio-kelima>Aplikasi Test Kecocokan Pasangan</h4>
-
-            <time datetime="2023-02-06">06 Feb 2023</time>
-
-            <p data-modal-text-portfolio-kelima>
-              Website ini merupakan website statis, terinspirasi dari tugas pada kegiatan Coding Festival mata kuliah
-              Algoritma dengan
-              studi kasus yang sama namun menggunakan bahasa pemrograman C++. Tetapi disini saya ingin supaya bisa
-              digunakan oleh
-              orang banyak, oleh karenanya saya membuat menjadi website dengan mengimplementasikan bahasa pemrograman
-              JavaScript
-              sebagai pengganntinya supaya bisa digunakan oleh orang lain.
-            </p>
-
-            <button class="modal-close-btn2">
-              <a href="https://tioprasetio-lovetest.vercel.app/" target="_blank">Lihat</a>
-            </button>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--- portfolio modal keenam --->
-      <div class="modal-container" data-modal-container-portfolio-keenam>
-
-        <div class="overlay" data-overlay-portfolio-keenam></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-portfolio-keenam>
-            <ion-icon name="close-outline" data-modal-close-btn-portfolio-keenam></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/portfolio/6.png" alt="" width="80" loading="lazy"
-                data-modal-img-portfolio-keenam>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-portfolio-keenam>UI Design Coffee Ordering Apps</h4>
-
-            <time datetime="2023-10-23">23 Okt 2023</time>
-
-            <p data-modal-text-portfolio-keenam>
-              Desain Aplikasi mobile sederhana ini bertemakan Neumorphism yang dapat memudahkan pengguna karena bersih
-              dan elegan.
-              Terdapat 3 bagian, yaitu Home, Detail, dan Keranjang. Pada bagian Home, pengguna disuguhkan menu dengan
-              kategori dan
-              menu populer. Selanjutnya di bagian Detail, berfungsi untuk melihat detail menu dan juga memasukkan menu
-              ke dalam
-              keranjang, dan di bagian keranjang tersebut pengguna bisa melakukan pemesanan sesuai yang dimasukkan ke
-              dalam keranjang.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--- portfolio modal ketujuh --->
-      <div class="modal-container" data-modal-container-portfolio-ketujuh>
-
-        <div class="overlay" data-overlay-portfolio-ketujuh></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-portfolio-ketujuh>
-            <ion-icon name="close-outline" data-modal-close-btn-portfolio-ketujuh></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/portfolio/7.png" alt="" width="80" loading="lazy"
-                data-modal-img-portfolio-ketujuh>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-portfolio-ketujuh>Aplikasi P3K Teknik Informatika</h4>
-
-            <time datetime="2024-01-11">11 Januari 2024</time>
-
-            <p data-modal-text-portfolio-ketujuh>
-              Program aplikasi ini berbasis website menggunakan bahasa pemrograman PHP untuk memenuhi tugas pada
-              matakuliah
-              Rekayasa Perangkat Lunak. Konsep aplikasi ini adalah mahasiswa dapat mengirim pesan atau laporan darurat
-              ketika
-              berada di lingkungan kampus, yang nantinya dapat diterima oleh admin untuk dilakukan penanganan.
-              Aplikasi ini baru hanya berlaku untuk mahasiswa/i Teknik Informatika Universitas Esa Unggul Bekasi.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="sertifikat">
-
-        <header>
-          <h2 class="h2 article-title">sertifikat</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <!-- ========================== SERTIF PERTAMA ================================ -->
-            <li class="blog-post-item" data-testimonials-item-sertif>
-              <!-- <a href="#"> -->
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/sertifikat/sertif1.jpg" alt="Internet Of Things (IoT)" loading="lazy"
-                  data-testimonials-avatar-sertif>
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Sertifikat</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2021-06-24">24 Juni 2021</time>
-                </div>
-
-                <h3 class="h3 blog-item-title" data-testimonials-title-sertif>Internet Of Things (IoT)</h3>
-
-                <p class="blog-text testimonials-text" data-testimonials-text-sertif>
-                  Sertifikat ini saya dapatkan pada saat menjalani PKL dalam pembuatan
-                  alat Smoke Detector dan Hand Sanitizer Otomatis dengan hasil penilaian
-                  90 di Pusat Penelitian Teknologi Informasi & Komunikasi - Institut Teknologi
-                  Bandung (PPTIK-ITB) yang bekerjasama dengan Laboratorium IoT
-                  Universitas Bandar Lampung dan berlangsung selama 3 Bulan,
-                  yaitu dari bulan
-                  November 2020 hingga Februari 2021.
-                </p>
-
-              </div>
-
-              <!-- </a> -->
-            </li>
-
-            <!-- ========================== SERTIF KEDUA ================================ -->
-            <li class="blog-post-item" data-testimonials-item-sertif-kedua>
-              <!-- <a href="#"> -->
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/sertifikat/sertif2.png" alt="JavaScript Intermediate" loading="lazy"
-                  data-testimonials-avatar-sertif-kedua>
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Sertifikat</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2022-08-15">15 Agustus 2021</time>
-                </div>
-
-                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-kedua>Kompetensi Keahlian</h3>
-
-                <p class="blog-text testimonials-text" data-testimonials-text-sertif-kedua>
-                  Sertifikat ini saya dapatkan pada saat mengikuti Course (kursus) mengenai
-                  bahasa pemrograman JavaScript di SoloLearn.
-                  SoloLearn sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-                  Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-                </p>
-
-              </div>
-
-              <!-- </a> -->
-            </li>
-
-            <!-- ========================== SERTIF KETIGA ================================ -->
-            <li class="blog-post-item" data-testimonials-item-sertif-ketiga>
-              <!-- <a href="#"> -->
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/sertifikat/sertif3.jpg" alt="SMK Telekomunikasi Telesandi" loading="lazy"
-                  data-testimonials-avatar-sertif-ketiga>
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Sertifikat</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2023-03-31">31 Maret 2023</time>
-                </div>
-
-                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-ketiga>JavaScript Intermediate</h3>
-
-                <p class="blog-text testimonials-text" data-testimonials-text-sertif-ketiga>
-                  Sertifikat ini saya dapatkan pada saat menjalani Ujian Praktek Kompetensi Keahlian
-                  Web Programming di SMK Telekomunikasi Telesandi dengan Skor 90.
-                </p>
-
-              </div>
-
-              <!-- </a> -->
-            </li>
-
-            <!-- ========================== SERTIF KEEMPAT ================================ -->
-            <li class="blog-post-item" data-testimonials-item-sertif-keempat>
-              <!-- <a href="#"> -->
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/sertifikat/sertif4.png" alt="Coding Festival" loading="lazy"
-                  data-testimonials-avatar-sertif-keempat>
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Sertifikat</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2023-05-08">08 Mei 2023</time>
-                </div>
-
-                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-keempat>Coding Festival</h3>
-
-                <p class="blog-text testimonials-text" data-testimonials-text-sertif-keempat>
-                  Sertifikat ini saya dapatkan pada saat mengikuti kegiatan wajib bagi Mahasiswa
-                  Fakultas Ilmu Komputer Universitas Esa Unggul Kampus Bekasi yaitu Coding Festival yang
-                  diselenggarakan oleh Ikatan Mahasiswa Fakultas Ilmu Komputer (IMFASILKOM) dengan
-                  menggunakan bahasa pemrograman C++.
-                </p>
-
-              </div>
-
-              <!-- </a> -->
-            </li>
-
-            <!-- ========================== SERTIF KELIMA ================================ -->
-            <li class="blog-post-item" data-testimonials-item-sertif-kelima>
-              <!-- <a href="#"> -->
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/sertifikat/sertif5.png" alt="Memulai Pemrograman Dengan Python" loading="lazy"
-                  data-testimonials-avatar-sertif-kelima>
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Sertifikat</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2024-01-02">02 Januari 2024</time>
-                </div>
-
-                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-kelima>Memulai Pemrograman Dengan Python
-                </h3>
-
-                <p class="blog-text testimonials-text" data-testimonials-text-sertif-kelima>
-                  Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai
-                  bahasa pemrograman Python di <b><a href="https://www.dicoding.com/certificates/1OP8NWD1VXQK"
-                      target="_blank">Dicoding.</a></b>
-                  Dicoding sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-                  Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-                </p>
-
-              </div>
-
-              <!-- </a> -->
-            </li>
-
-            <!-- ========================== SERTIF KEENAM ================================ -->
-            <li class="blog-post-item" data-testimonials-item-sertif-keenam>
-              <!-- <a href="#"> -->
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/sertifikat/sertif6.png" alt="Belajar Dasar Pemrograman JavaScript"
-                  loading="lazy" data-testimonials-avatar-sertif-keenam>
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Sertifikat</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2024-03-14">14 Maret 2024</time>
-                </div>
-
-                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-keenam>Belajar Dasar Pemrograman
-                  JavaScript
-                </h3>
-
-                <p class="blog-text testimonials-text" data-testimonials-text-sertif-keenam>
-                  Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai
-                  bahasa pemrograman JavaScript di <b><a href="https://www.dicoding.com/certificates/L4PQQD6O2PO1"
-                      target="_blank">Dicoding.</a></b>
-                  Dicoding sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-                  Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-                </p>
-
-              </div>
-
-              <!-- </a> -->
-            </li>
-
-            <!-- ========================== SERTIF KETUJUH ================================ -->
-            <li class="blog-post-item" data-testimonials-item-sertif-ketujuh>
-              <!-- <a href="#"> -->
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/sertifikat/sertif7.png" alt="Belajar Membuat Front End Web Untuk Pemula"
-                  loading="lazy" data-testimonials-avatar-sertif-ketujuh>
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Sertifikat</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2024-04-15">15 April 2024</time>
-                </div>
-
-                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-ketujuh>Belajar Membuat Front End Web
-                  Untuk Pemula
-                </h3>
-
-                <p class="blog-text testimonials-text" data-testimonials-text-sertif-ketujuh>
-                  Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai
-                  pembuatan Front End pada sebuah Website di <b><a
-                      href="https://www.dicoding.com/certificates/4EXGQYODGZRL" target="_blank">Dicoding.</a></b>
-                  Dicoding sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-                  Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-                </p>
-
-              </div>
-
-              <!-- </a> -->
-            </li>
-
-            <!-- ========================== SERTIF KEDELAPAN ================================ -->
-            <li class="blog-post-item" data-testimonials-item-sertif-kedelapan>
-              <!-- <a href="#"> -->
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/sertifikat/sertif8.png" alt="Belajar Dasar Structured Query Language (SQL)"
-                  loading="lazy" data-testimonials-avatar-sertif-kedelapan>
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Sertifikat</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2024-04-19">19 April 2024</time>
-                </div>
-
-                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-kedelapan>Belajar Dasar Structured Query
-                  Language (SQL)
-                </h3>
-
-                <p class="blog-text testimonials-text" data-testimonials-text-sertif-kedelapan>
-                  Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai berbagai
-                  query dasar yang sering digunakan dalam mengelola data menggunakan bahasa structured query language
-                  (SQL). di <b><a href="https://www.dicoding.com/certificates/4EXGQ69REZRL"
-                      target="_blank">Dicoding.</a></b>
-                  Dicoding sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-                  Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-                </p>
-
-              </div>
-
-              <!-- </a> -->
-            </li>
-
-            <!-- ========================== SERTIF KESEMBILAN ================================ -->
-            <li class="blog-post-item" data-testimonials-item-sertif-kesembilan>
-              <!-- <a href="#"> -->
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/sertifikat/sertif9.png" alt="Belajar Dasar Pemrograman Web" loading="lazy"
-                  data-testimonials-avatar-sertif-kesembilan>
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Sertifikat</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2024-04-19">19 April 2024</time>
-                </div>
-
-                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-kesembilan>Belajar Dasar Pemrograman Web
-                </h3>
-
-                <p class="blog-text testimonials-text" data-testimonials-text-sertif-kesembilan>
-                  Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai
-                  pembuatan sebuah Website di <b><a href="https://www.dicoding.com/certificates/72ZDVE9WLZYW"
-                      target="_blank">Dicoding.</a></b>
-                  Dicoding sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-                  Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-                </p>
-
-              </div>
-
-              <!-- </a> -->
-            </li>
-            <!-- ========================== SERTIF KESEPULUH ================================ -->
-            <li class="blog-post-item" data-testimonials-item-sertif-kesepuluh>
-              <!-- <a href="#"> -->
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/sertifikat/sertif10-2.jpg" alt="Belajar Dasar Pemrograman Web" loading="lazy"
-                  data-testimonials-avatar-sertif-kesepuluh>
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Sertifikat</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2022-03-30">30 Maret 2022</time>
-                </div>
-
-                <h3 class="h3 blog-item-title" data-testimonials-title-sertif-kesepuluh>Uji Kompetensi Keahlian
-                </h3>
-
-                <p class="blog-text testimonials-text" data-testimonials-text-sertif-kesepuluh>
-                  Sertifikat ini saya dapatkan pada saat Uji Kompetensi Keahlian ketika saya menjadi siswa di SMK
-                  Telekomunikasi Telesandi. Adapun paket soalnya adalah membuat Aplikasi Pemesanan Hotel Berbasis Web
-                  dengan penguji eksternal dari Coding Camp Indonesia yang memberikan nilai akhir 94 dengan rincian
-                  Aspek Pengetahuan 97 dan Aspek Keterampilan 92.
-                </p>
-
-              </div>
-
-              <!-- </a> -->
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--- testimonials modal --->
-
-      <div class="modal-container" data-modal-container-sertif>
-
-        <div class="overlay" data-overlay-sertif></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-sertif>
-            <ion-icon name="close-outline" data-modal-close-btn-sertif></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/sertifikat/sertif1.jpg" alt="" width="80" loading="lazy" data-modal-img-sertif>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-sertif>Internet Of Thing (IoT)</h4>
-
-            <time datetime="2021-06-24">24 Juni 2021</time>
-
-            <p data-modal-text-sertif>
-              Sertifikat ini saya dapatkan pada saat menjalani PKL dalam pembuatan alat Smoke Detector dan Hand
-              Sanitizer
-              Otomatis
-              dengan hasil penilaian 90 di Pusat Penelitian Teknologi Informasi & Komunikasi - Institut Teknologi
-              Bandung
-              (PPTIK-ITB)
-              yang bekerjasama dengan Laboratorium IoT Universitas Bandar Lampung dan berlangsung selama 3 Bulan, yaitu
-              dari
-              bulan
-              November 2020 hingga Februari 2021.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--Modal Sertif kedua-->
-      <div class="modal-container" data-modal-container-sertif-kedua>
-
-        <div class="overlay" data-overlay-sertif-kedua></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-sertif-kedua>
-            <ion-icon name="close-outline" data-modal-close-btn-sertif-kedua></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/sertifikat/sertif2.png" alt="" width="80" loading="lazy"
-                data-modal-img-sertif-kedua>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-sertif-kedua>Kompetensi Keahlian</h4>
-
-            <time datetime="2022-08-15">15 Agustus 2021</time>
-
-            <p data-modal-text-sertif-kedua>
-              Sertifikat ini saya dapatkan pada saat menjalani Ujian Praktek Kompetensi Keahlian
-              Web Programming di SMK Telekomunikasi Telesandi dengan Skor 90.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--Modal Sertif ketiga-->
-      <div class="modal-container" data-modal-container-sertif-ketiga>
-
-        <div class="overlay" data-overlay-sertif-ketiga></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-sertif-ketiga>
-            <ion-icon name="close-outline" data-modal-close-btn-sertif-ketiga></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/sertifikat/sertif3.jpg" alt="" width="80" loading="lazy"
-                data-modal-img-sertif-ketiga>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-sertif-ketiga>JavaScript Intermediate</h4>
-
-            <time datetime="2022-06-16">16 Juni 2022</time>
-
-            <p data-modal-text-sertif-ketiga>
-              Sertifikat ini saya dapatkan pada saat mengikuti Course (kursus) mengenai
-              bahasa pemrograman JavaScript di SoloLearn.
-              SoloLearn sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-              Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--Modal Sertif keempat-->
-      <div class="modal-container" data-modal-container-sertif-keempat>
-
-        <div class="overlay" data-overlay-sertif-keempat></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-sertif-keempat>
-            <ion-icon name="close-outline" data-modal-close-btn-sertif-keempat>Coding Festival</ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/sertifikat/sertif4.png" alt="" width="80" loading="lazy"
-                data-modal-img-sertif-keempat>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-sertif-keempat></h4>
-
-            <time datetime="2023-05-08">08 Mei 2023</time>
-
-            <p data-modal-text-sertif-keempat>
-              Sertifikat ini saya dapatkan pada saat mengikuti kegiatan wajib bagi Mahasiswa
-              Fakultas Ilmu Komputer Universitas Esa Unggul Kampus Bekasi yaitu Coding Festival yang
-              diselenggarakan oleh Ikatan Mahasiswa Fakultas Ilmu Komputer (IMFASILKOM) dengan
-              menggunakan bahasa pemrograman C++.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--Modal Sertif kelima-->
-      <div class="modal-container" data-modal-container-sertif-kelima>
-
-        <div class="overlay" data-overlay-sertif-kelima>Memulai Pemrograman Dengan Python</div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-sertif-kelima>
-            <ion-icon name="close-outline" data-modal-close-btn-sertif-kelima></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/sertifikat/sertif5.png" alt="" width="80" loading="lazy"
-                data-modal-img-sertif-kelima>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-sertif-kelima></h4>
-
-            <time datetime="2024-01-02">02 Januari 2024</time>
-
-            <p data-modal-text-sertif-kelima>
-              Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai
-              bahasa pemrograman Python di <b>Dicoding.</b>
-              Dicoding sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-              Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--Modal Sertif keenam-->
-      <div class="modal-container" data-modal-container-sertif-keenam>
-
-        <div class="overlay" data-overlay-sertif-keenam>Belajar Dasar Pemrograman JavaScript</div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-sertif-keenam>
-            <ion-icon name="close-outline" data-modal-close-btn-sertif-keenam></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/sertifikat/sertif6.png" alt="" width="80" loading="lazy"
-                data-modal-img-sertif-keenam>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-sertif-keenam></h4>
-
-            <time datetime="2024-03-14">14 Maret 2024</time>
-
-            <p data-modal-text-sertif-keenam>
-              Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai
-              bahasa pemrograman JavaScript di <b> <a href="https://www.dicoding.com/certificates/L4PQQD6O2PO1"
-                  target="_blank">Dicoding.</a></b>
-              Dicoding sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-              Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--Modal Sertif ketujuh-->
-      <div class="modal-container" data-modal-container-sertif-ketujuh>
-
-        <div class="overlay" data-overlay-sertif-ketujuh>Belajar Membuat Front End Web Untuk Pemula</div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-sertif-ketujuh>
-            <ion-icon name="close-outline" data-modal-close-btn-sertif-ketujuh></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/sertifikat/sertif7.png" alt="" width="80" loading="lazy"
-                data-modal-img-sertif-ketujuh>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-sertif-ketujuh></h4>
-
-            <time datetime="2024-04-15">15 April 2024</time>
-
-            <p data-modal-text-sertif-ketujuh>
-              Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai
-              pembuatan Front End pada sebuah Website di <b><a href="https://www.dicoding.com/certificates/4EXGQYODGZRL"
-                  target="_blank">Dicoding.</a></b>
-              Dicoding sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-              Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--Modal Sertif kedelapan-->
-      <div class="modal-container" data-modal-container-sertif-kedelapan>
-
-        <div class="overlay" data-overlay-sertif-kedelapan>Belajar Dasar Structured Query Language (SQL)</div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-sertif-kedelapan>
-            <ion-icon name="close-outline" data-modal-close-btn-sertif-kedelapan></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/sertifikat/sertif8.png" alt="" width="80" loading="lazy"
-                data-modal-img-sertif-kedelapan>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-sertif-kedelapan></h4>
-
-            <time datetime="2024-04-19">19 April 2024</time>
-
-            <p data-modal-text-sertif-kedelapan>
-              Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai berbagai
-              query dasar yang sering digunakan dalam mengelola data menggunakan bahasa structured query language (SQL).
-              di <b><a href="https://www.dicoding.com/certificates/4EXGQ69REZRL" target="_blank">Dicoding.</a></b>
-              Dicoding sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-              Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--Modal Sertif kesembilan-->
-      <div class="modal-container" data-modal-container-sertif-kesembilan>
-
-        <div class="overlay" data-overlay-sertif-kesembilan>Belajar Dasar Pemrograman Web</div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-sertif-kesembilan>
-            <ion-icon name="close-outline" data-modal-close-btn-sertif-kesembilan></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/sertifikat/sertif9.png" alt="" width="80" loading="lazy"
-                data-modal-img-sertif-kesembilan>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-sertif-kesembilan></h4>
-
-            <time datetime="2024-04-19">19 April 2024</time>
-
-            <p data-modal-text-sertif-kesembilan>
-              Sertifikat ini saya dapatkan pada saat mengikuti online Course (kursus) mengenai
-              pembuatan sebuah Website di <b><a href="https://www.dicoding.com/certificates/72ZDVE9WLZYW"
-                  target="_blank">Dicoding.</a></b>
-              Dicoding sendiri merupakan tempat untuk belajar bahasa pemrograman, dan
-              Aplikasi ini ada berbagai kursus mulai dari HTML, CSS,dan lainnya.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-      <!--Modal Sertif kesepuluh-->
-      <div class="modal-container" data-modal-container-sertif-kesepuluh>
-
-        <div class="overlay" data-overlay-sertif-kesepuluh>Uji Kompetensi Keahlian</div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn-sertif-kesepuluh>
-            <ion-icon name="close-outline" data-modal-close-btn-sertif-kesepuluh></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/sertifikat/sertif10.jpg" alt="" width="80" loading="lazy"
-                data-modal-img-sertif-kesepuluh>
-            </figure>
-
-            <img src="./assets/images/icon-quote.svg" alt="quote icon">
-          </div>
-
-          <div class="modal-content">
-
-            <h4 class="h3 modal-title" data-modal-title-sertif-kesepuluh></h4>
-
-            <time datetime="2022-03-30">30 Maret 2022</time>
-
-            <p data-modal-text-sertif-kesepuluh>
-              Sertifikat ini saya dapatkan pada saat Uji Kompetensi Keahlian ketika saya menjadi siswa di SMK
-              Telekomunikasi
-              Telesandi. Adapun paket soalnya adalah membuat Aplikasi Pemesanan Hotel Berbasis Web dengan penguji
-              eksternal dari
-              Coding Camp Indonesia yang memberikan nilai akhir 94 dengan rincian Aspek Pengetahuan 97 dan Aspek
-              Keterampilan 92.
-            </p>
-
-          </div>
-
-        </section>
-
-      </div>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="kontak">
-
-        <header>
-          <h2 class="h2 article-title">Kontak</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4796.593911468063!2d107.03921899239207!3d-6.256892868932151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1662019255993!5m2!1sid!2sid"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Form Kontak</h3>
-          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-            <strong>Terima Kasih!</strong> Pesan anda sudah saya terima.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-            </button>
-          </div>
-
-          <form action="#" class="form" name="portfolio-contact-form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="nama" class="form-input" placeholder="Nama" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
-            </div>
-
-            <textarea name="pesan" class="form-input" placeholder="Kirim pesan disini ya..." required
-              data-form-input></textarea>
-
-            <button class="form-btn btn-kirim" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Kirim pesan</span>
-            </button>
-            <button class="form-btn btn-loading d-none" type="button" disabled>
-              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-              Proses...
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-  <!-- ================== GSAP ================= -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
-  <script>
-    gsap.to('.name', { duration: 2, delay: 1.8, text: 'Tio Yudho Prasetio' });
-    gsap.to('.title', { duration: 2, delay: 3, text: 'Junior Web Developer' });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-    crossorigin="anonymous"></script>
-
-  <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbzepsC16sJqyVEZkvwJNPF_5toJxQw_LnxAsrbTteylnhicwnzW8mm5a3kqCqIu8E0cZQ/exec";
-    const formulir = document.forms["portfolio-contact-form"];
-    const btnKirim = document.querySelector(".btn-kirim");
-    const btnLoading = document.querySelector('.btn-loading');
-    const myAlert = document.querySelector('.my-alert');
-
-    formulir.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      // Mengambil nilai input nama, email, dan pesan
-      const namaValue = formulir.nama.value.trim();
-      const emailValue = formulir.email.value.trim();
-      const pesanValue = formulir.pesan.value.trim();
-
-      // Validasi input
-      if (namaValue === '' || emailValue === '' || pesanValue === '') {
-        alert('Mohon isi semua kolom!');
-        return;
-      }
-
-      if (namaValue === '' || /^\s*$/.test(namaValue)) {
-        alert('Nama tidak boleh kosong atau hanya berisi spasi!');
-        return;
-      }
-
-      if (emailValue === '' || /^\s*$/.test(emailValue)) {
-        alert('Email tidak boleh kosong atau hanya berisi spasi!');
-        return;
-      }
-
-      if (pesanValue === '' || /^\s*$/.test(pesanValue)) {
-        alert('Pesan tidak boleh kosong atau hanya berisi spasi!');
-        return;
-      }
-
-      // Menampilkan loading spinner
-      btnLoading.classList.toggle('d-none');
-      btnKirim.classList.toggle('d-none');
-
-      // Mengirim data formulir menggunakan fetch
-      fetch(scriptURL, { method: 'POST', body: new FormData(formulir) })
-        .then(response => {
-          // Menyembunyikan loading spinner dan menampilkan pesan berhasil
-          btnLoading.classList.toggle('d-none');
-          btnKirim.classList.toggle('d-none');
-          myAlert.classList.toggle('d-none');
-          formulir.reset();
-          console.log('Success!', response);
-        })
-        .catch(error => {
-          // Menyembunyikan loading spinner dan menampilkan pesan error
-          btnLoading.classList.toggle('d-none');
-          btnKirim.classList.toggle('d-none');
-          console.error('Error!', error.message);
-        });
-    });
-
-
-    //Tombol download CV
-    document.addEventListener("DOMContentLoaded", function () {
-      const btnDown = document.getElementById("btnDown");
-      const loadingElement = document.getElementById("loading");
-      const done = document.getElementById("done");
-      const dwn = document.getElementById("dwn");
-      const info = document.getElementById("info");
-
-      done.style.display = "none";
-
-      btnDown.addEventListener("click", function (event) {
-        event.preventDefault(); // Mencegah perilaku default dari tautan saat diklik
-
-        dwn.style.display = "none";
-        loadingElement.style.display = "inline-block"; // Tampilkan animasi loading
-        done.style.display = "none"; // Sembunyikan ikon 'selesai'
-        info.textContent = ""; // Kosongkan pesan
-
-        // Simulasi waktu proses unduh (misalnya 3 detik)
-        setTimeout(function () {
-          loadingElement.style.display = "none"; // Sembunyikan animasi loading
-          done.style.display = "inline-block"; // Tampilkan ikon 'selesai'
-          info.textContent = "Download Selesai"; // Tampilkan pesan "Download Selesai"
-
-          // Buka tautan dalam tab baru setelah selesai
-          window.open(btnDown.parentElement.href, '_blank');
-        }, 3000); // Ubah angka 3000 menjadi sesuai dengan waktu unduhan sebenarnya
-      });
-    });
-
-  </script>
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
+      <span class="footer__copy">
+         &#169; All Rights Reserved By Tio Yudho Prasetio
+      </span>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#home" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assets/js/scrollreveal.min.js"></script>
+
+   <!--=============== EMAIL JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+
+   <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwsc072kHrg0AihnpEuOfMdqkdceodmJoks5TetfXIiiAUYsp2isrjPuHPD9Oc6uT4X6A/exec'
+      const form = document.forms['portfolio-contact-form']
+      const btnKirim = document.querySelector(".btn-kirim")
+      const btnLoading = document.querySelector('.btn-loading')
+
+      btnLoading.style.display = "none"
+
+      form.addEventListener('submit', e => {
+         e.preventDefault()
+
+         const name = form.nama.value.trim();
+         const email = form.email.value.trim();
+         const message = form.pesan.value.trim();
+
+         if (!name || !email || !message) {
+            alert("All fields are required!");
+            return;
+         }
+         btnKirim.style.display = "none"
+         btnLoading.style.display = "block"
+
+         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+               btnKirim.style.display = "block"
+               btnLoading.style.display = "none"
+               form.reset();
+               showAlert("Berhasil dikirim!", "success");
+            })
+            .catch(error => {
+               btnKirim.style.display = "block"
+               btnLoading.style.display = "none"
+               form.reset();
+               showAlert("Gagal mengirim. Silakan coba lagi.", "error");
+            })
+      })
+   </script>
 </body>
 
 </html>

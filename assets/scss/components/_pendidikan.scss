@@ -1,0 +1,43 @@
+.pendidikan {
+  &__container {
+    row-gap: 2rem;
+  }
+
+  &__card {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  &__company {
+    font-size: var(--h2-font-size);
+  }
+
+  &__data {
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  &__profession {
+    display: flex;
+    align-items: center; /* Selaraskan gambar dan teks secara vertikal */
+    gap: 8px; /* Beri jarak antara gambar dan teks */
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.5rem;
+  }
+
+  &__icon {
+    width: 30px; /* Sesuaikan ukuran gambar */
+    height: auto; /* Pertahankan proporsi gambar */
+  }
+
+  &__date {
+    display: block;
+    font-size: var(--smaller-font-size);
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    color: var(--text-color);
+  }
+}
