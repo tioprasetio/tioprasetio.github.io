@@ -66,8 +66,8 @@
                <div class="perfil__data">
                   <h1 class="perfil__name">Tio Yudho <br> Prasetio</h1>
                   <div class="perfil__buttons">
-                     <a href="#projects" class="button">Projects</a>
-                     <a href="#services" class="button button__black">Services</a>
+                     <a href="#projects" class="button">Portfolio</a>
+                     <a href="#services" class="button button__black">Kemampuan</a>
                   </div>
                </div>
             </div>
@@ -84,7 +84,8 @@
                <p class="info__description">
                   Bersemangat untuk membuat dan mendesain situs web dengan antarmuka menarik terbaik.
                </p>
-               <a href="assets/pdf/cv_tio.pdf" download target="_blank" class="button button__black">Download CV</a>
+               <a href="assets/pdf/cv_tio.pdf" download target="_blank" class="button button__black"><i
+                     class="ri-download-line"></i>&nbsp;Download CV</a>
             </div>
 
             <!--===== ABOUT =====-->
@@ -108,14 +109,13 @@
                   </a>
                </div>
                <p class="about__note">
-                  Saya merupakan Mahasiswa aktif Universitas Esa Unggul dari Program Studi Teknik Informatika yang
-                  memiliki ketertarikan
-                  dengan dunia programming dan memiliki pemahaman mengenai HTML, CSS, PHP, maupun JavaScript dengan baik
-                  serta berdedikasi
-                  untuk menjadi Front-End Web Developer.
+                  Halo, Saya merupakan Mahasiswa aktif Universitas Esa Unggul dari Program Studi Teknik Informatika
+                  yang memiliki ketertarikan dengan dunia programming dan memiliki pemahaman mengenai bahasa
+                  pemrograman JavaScript dan PHP dengan Laravel sangat baik serta berdedikasi untuk menjadi Laravel Web
+                  Developer.
                </p>
 
-               <a href="#contact" class="button">Contact me</a>
+               <a href="#contact" class="button"><i class="ri-send-plane-line"></i>&nbsp;Contact me</a>
             </div>
 
 
@@ -441,11 +441,14 @@
             <article class="experience__card">
                <h2 class="experience__company">Jabar Digital Academy</h2>
                <div class="experience__data">
-                  <h3 class="experience__profession">Fullstack Laravel Web Developer</h3>
+                  <h3 class="experience__profession">
+                     <img class="experience__icon" src="assets/img/jda.svg" alt="image">Fullstack Laravel Web Developer
+                  </h3>
                   <span class="experience__date">Feb/24 - Mei/24</span>
                   <p class="experience__description">
-                     Lolos ke Fase 2 pelatihan Full Stack Web Developer yang diselenggarakan oleh Pemprov Jawa Barat
-                     melalui program Jabar Digital Academy yang menggandeng Alkademi dengan materi Laravel.
+                     Mengembangkan aplikasi web BoRie (Book Review) dengan framework Laravel 11, mencakup perancangan
+                     ERD, pembuatan database
+                     MySQL, dan pengembangan fitur review dan rating.
                   </p>
                </div>
             </article>
@@ -453,11 +456,14 @@
             <article class="experience__card">
                <h2 class="experience__company">PPTIK-ITB</h2>
                <div class="experience__data">
-                  <h3 class="experience__profession">Praktik Kerja Lapangan</h3>
+                  <h3 class="experience__profession">
+                     <img class="experience__icon" src="assets/img/pptik.png" alt="image">
+                     Praktik Kerja Lapangan
+                  </h3>
                   <span class="experience__date">Nov/20 - Feb/21</span>
                   <p class="experience__description">
                      Melakukan proses pembuatan alat Hand Sanitizer Otomatis dan Smoke Detector dari awal hingga akhir
-                     menggunakan Arduino Uno dengan hasil penilaian 90.
+                     menggunakan Arduino Uno dan Servo dengan hasil penilaian 90.
                   </p>
                </div>
             </article>
@@ -607,7 +613,7 @@
          <h2 class="section__title">KONTAK SAYA</h2>
          <div id="customAlert" class="alert hidden">
             <span id="alertMessage">Pesan notifikasi</span>
-            <button class="close-btn" onclick="hideAlert()">×</button>
+            <button class="close-btn" onclick="hideAlert()"><i class="ri-close-large-line"></i></button>
          </div>
 
          <div class="contact__container container grid">
@@ -617,10 +623,10 @@
                   <input type="email" name="email" placeholder="Email" required class="contact__input">
                </div>
                <textarea name="pesan" placeholder="Pesan" class="contact__input contact__area"></textarea>
-               <button type="submit" class="button contact__button btn-kirim">Kirim pesan</button>
+               <button type="submit" class="button contact__button btn-kirim"><i
+                     class="ri-send-plane-line"></i>&nbsp;Kirim pesan</button>
                <button class="button contact__button btn-loading d-none" type="button" disabled>
-                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                  Proses...
+                  <span><i class="ri-loader-2-line"></i>&nbsp;Proses...</span>
                </button>
                <p class="contact__message" id="contact-message"></p>
             </form>

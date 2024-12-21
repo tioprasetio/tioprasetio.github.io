@@ -3,13 +3,21 @@ function showAlert(message, type = "success") {
   const alertBox = document.getElementById("customAlert");
   const alertMessage = document.getElementById("alertMessage");
 
-  alertMessage.textContent = message; // Set pesan
+  // Pilih ikon berdasarkan tipe
+  const icon =
+    type === "success"
+      ? '<i class="ri-checkbox-circle-line"></i>&nbsp;'
+      : '<i class="ri-close-circle-line"></i>&nbsp;';
+
+  // Set pesan dengan ikon
+  alertMessage.innerHTML = `${icon}${message}`;
   alertBox.className = `alert ${type}`; // Tambahkan kelas tipe
   alertBox.classList.remove("hidden"); // Tampilkan alert
 
   // Sembunyikan alert secara otomatis setelah 3 detik
   setTimeout(hideAlert, 3000);
 }
+
 
 // Menyembunyikan alert
 function hideAlert() {
