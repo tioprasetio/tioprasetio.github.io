@@ -137,7 +137,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   max-width: 90%;
-  width: 300px;
+  width: 100%;
   padding: 15px 20px;
   background-color: #369139; /* Warna hijau untuk sukses */
   color: white;
