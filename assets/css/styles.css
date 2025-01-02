@@ -17,6 +17,16 @@
          -> Choose any color 
          -> Copy the color mode (HSL)
   */
+  --icon-color: #ffffff;
+  --icon-bg-color: #7c2ec9;
+  --icon-hover-bg-color: #5a20a6;
+  --icon-size: 16px;
+  --button-padding: 10px;
+  --button-border-radius: 5px;
+  --button-font-size: 18px;
+  --popup-background: rgba(0, 0, 0, 0.4);
+  --popup-close-font-size: 24px;
+
   --hue: 358;
   --first-color: hsl(225.22deg 80% 49%);
   /* --first-color: hsl(var(--hue), 80%, 49%); */
@@ -125,6 +135,111 @@ img {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.SHOWLINK_popup-device-preview {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--popup-background);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.SHOWLINK_popup-content {
+  width: auto;
+  max-width: 90%;
+  max-height: 90%;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.SHOWLINK_close-popup {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: var(--popup-close-font-size);
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.SHOWLINK_device-controls.SHOWLINK_custom-bar {
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+}
+
+.SHOWLINK_device-controls.SHOWLINK_limited-width {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.SHOWLINK_device-button.SHOWLINK_custom-button {
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  cursor: pointer;
+  border: none;
+  background: var(--icon-bg-color);
+  color: var(--icon-color);
+  border-radius: var(--button-border-radius);
+  transition: background 0.3s ease;
+}
+
+.SHOWLINK_device-button.SHOWLINK_custom-button:hover {
+  background: var(--icon-hover-bg-color);
+}
+
+.SHOWLINK_custom-icon {
+  font-size: var(--icon-size);
+}
+
+.SHOWLINK_device-frame {
+  width: 100%;
+  height: calc(100%-250px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 75px;
+}
+
+.SHOWLINK_device-frame iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: none;
+  margin: auto;
+  transform-origin: top center;
+  border-radius: 10px;
+}
+
+/* Sembunyikan tombol desktop dan tablet pada perangkat mobile */
+@media (max-width: 768px) {
+  .SHOWLINK_desktop-only {
+    display: none;
+  }
 }
 
 /*======= LAYOUT =======*/
@@ -830,7 +945,8 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .pendidikan__company, .experience__company {
+  .pendidikan__company,
+  .experience__company {
     padding: 0 10px 0 0;
   }
   .home__container {
@@ -845,10 +961,12 @@ img {
   .services__container {
     grid-template-columns: repeat(2, 350px);
   }
-  .experience__container, .pendidikan__container {
+  .experience__container,
+  .pendidikan__container {
     grid-template-columns: initial;
   }
-  .experience__card, .pendidikan__card {
+  .experience__card,
+  .pendidikan__card {
     grid-template-columns: 320px 380px;
     align-items: center;
   }
@@ -913,7 +1031,7 @@ img {
     height: 210px;
   }
   .about__img {
-    transform: translateY(-.5rem);
+    transform: translateY(-0.5rem);
   }
   .skills {
     grid-column: 1/2;
@@ -922,11 +1040,13 @@ img {
   .skills__title {
     font-size: var(--h3-font-size);
   }
-  .projects__container, .sertif__container {
+  .projects__container,
+  .sertif__container {
     grid-template-columns: repeat(3, 368px);
     gap: 2rem;
   }
-  .projects__card, .sertif__card {
+  .projects__card,
+  .sertif__card {
     padding-bottom: 2rem;
   }
   .services__container {
@@ -945,17 +1065,21 @@ img {
     right: -1.5rem;
     top: -1.5rem;
   }
-  .experience__container, .pendidikan__container {
+  .experience__container,
+  .pendidikan__container {
     row-gap: 4rem;
   }
-  .experience__card, .pendidikan__card {
+  .experience__card,
+  .pendidikan__card {
     grid-template-columns: 350px 510px;
     column-gap: 8rem;
   }
-  .experience__company, .pendidikan__company {
+  .experience__company,
+  .pendidikan__company {
     font-size: var(--h1-font-size);
   }
-  .experience__data, .pendidikan__data {
+  .experience__data,
+  .pendidikan__data {
     padding: 2rem;
     border-radius: 2rem;
   }

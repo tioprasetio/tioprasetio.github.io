@@ -1,3 +1,122 @@
+// JavaScript untuk Memunculkan Popup dan Mengisi Iframe
+document.addEventListener("DOMContentLoaded", function () {
+  const devicePreviewPopup = document.getElementById(
+    "SHOWLINK_devicePreviewPopup"
+  );
+  const closePopup = document.getElementById("SHOWLINK_closePopup");
+  const popupContent = document.getElementById("SHOWLINK_popupContent");
+  const previewIframe = document.getElementById("SHOWLINK_previewIframe");
+  const desktopView = document.getElementById("SHOWLINK_desktopView");
+  const tabletView = document.getElementById("SHOWLINK_tabletView");
+  const phoneView = document.getElementById("SHOWLINK_phoneView");
+
+  let previewerSettings = {
+    defaultView: "desktop",
+    defaultViewFromMobile: "mobile",
+    reloadOnChange: false,
+    closeOnOverlayClick: true,
+    linkKeyword: "#showlink",
+  };
+
+  // Mencegah scroll halaman belakang ketika popup muncul
+  function disablePageScroll() {
+    document.body.style.overflow = "hidden";
+  }
+
+  // Mengizinkan scroll halaman belakang setelah popup ditutup
+  function enablePageScroll() {
+    document.body.style.overflow = "";
+  }
+
+  // Event untuk membuka popup ketika link dengan #showlink diklik
+  document
+    .querySelectorAll(`a[href$="${previewerSettings.linkKeyword}"]`)
+    .forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        const previewUrl = link.href.split("#")[0];
+        // Ambil URL sebelum #
+        previewIframe.style.display = "none";
+        previewIframe.src = previewUrl;
+        devicePreviewPopup.style.display = "flex";
+        disablePageScroll();
+
+        // Atur tampilan default sesuai pengaturan
+        if (
+          window.innerWidth <= 768 &&
+          previewerSettings.defaultViewFromMobile === "mobile"
+        ) {
+          phoneView.click();
+        } else {
+          if (previewerSettings.defaultView === "tablet") {
+            tabletView.click();
+          } else if (previewerSettings.defaultView === "desktop") {
+            desktopView.click();
+          } else {
+            phoneView.click();
+          }
+        }
+      });
+    });
+
+  // Event untuk menutup popup
+  closePopup.addEventListener("click", function () {
+    devicePreviewPopup.style.display = "none";
+    previewIframe.src = "";
+    // Kosongkan iframe setelah ditutup
+    enablePageScroll();
+  });
+
+  // Tutup popup jika area di luar konten diklik
+  devicePreviewPopup.addEventListener("click", function (event) {
+    if (event.target === devicePreviewPopup && event.target !== popupContent) {
+      devicePreviewPopup.style.display = "none";
+      previewIframe.src = "";
+      enablePageScroll();
+    }
+  });
+
+  // Event untuk mengganti ukuran iframe sesuai dengan mode perangkat
+  desktopView.addEventListener("click", function () {
+    previewIframe.style.width = "1200px";
+    previewIframe.style.height = "620px";
+    if (window.innerWidth <= 768) {
+      previewIframe.style.transform = "scale(1)";
+      previewIframe.style.height = "600px";
+    } else {
+      previewIframe.style.transform = "scale(1)";
+      previewIframe.style.marginTop = "0";
+    }
+    previewIframe.style.display = "block";
+  });
+
+  tabletView.addEventListener("click", function () {
+    previewIframe.style.width = "768px";
+    previewIframe.style.height = "620px";
+    if (window.innerWidth <= 768) {
+      previewIframe.style.transform = "scale(0.5)";
+      previewIframe.style.height = "720px";
+    } else {
+      previewIframe.style.transform = "scale(1)";
+      previewIframe.style.marginTop = "0";
+    }
+    previewIframe.style.display = "block";
+  });
+
+  phoneView.addEventListener("click", function () {
+    previewIframe.style.width = "375px";
+    previewIframe.style.height = "620px";
+    previewIframe.style.transform = "scale(1)";
+    previewIframe.style.marginTop = "0";
+    previewIframe.style.display = "block";
+  });
+
+  // Event saat iframe selesai dimuat
+  previewIframe.addEventListener("load", function () {
+    previewIframe.style.display = "block";
+  });
+});
+
 /*=============== ALERT JS ===============*/
 function showAlert(message, type = "success") {
   const alertBox = document.getElementById("customAlert");
@@ -17,7 +136,6 @@ function showAlert(message, type = "success") {
   // Sembunyikan alert secara otomatis setelah 3 detik
   setTimeout(hideAlert, 3000);
 }
-
 
 // Menyembunyikan alert
 function hideAlert() {
