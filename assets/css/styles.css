@@ -583,6 +583,7 @@ img {
 .projects__description {
   color: var(--text-color);
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 .projects__skill {
   width: 1rem;
